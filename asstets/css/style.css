@@ -370,6 +370,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color:#0d56d9;
 }
 .plans-card {
     flex-basis: 30%;
@@ -379,6 +380,15 @@ header {
     align-items: center;
     border-radius: 10px;
 
+}
+.plans-card_heading{
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: .5rem;
+    line-height: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .plans-card__text {
@@ -393,7 +403,7 @@ header {
     outline: none;
 }
 .plans-card__text:hover {
-    background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206));
+    background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206,0.7));
     font-weight: 300;
     text-align: center;
     font-size: 2.5rem;
@@ -404,45 +414,30 @@ header {
     font-size: 1rem;
     outline: none;
     cursor: pointer;
-    height: 100%;
     transition: all .7s;
     border-radius: 8px;
 }
-.plans-card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
+
 .plans-card h4 {
     font-size: 4rem;
     font-weight: 100;
 }
 .plans-card1 {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(255, 255, 255, 0.7)), url(../css/images/);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.7),rgba(255, 255, 255)), url(../css/images/yoga-card.jpg);
     background-size: cover;
     background-position: top;
 }
 .plans-card2 {
-    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.8)), url(../css/images/gym-card.jpg);
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.7),rgba(255, 255, 255)), url(../css/images/gym-card.jpg);
     background-position: top;
     background-size: cover;
 }
 .plans-card3 {
-    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.8)), url(../css/images/yoga-gym.jpg);
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.9),rgba(255, 255, 255)), url(../css/images/gymclass.jpg);
     background-position: top;
     background-size: cover;
 }
-.plans-card__main {
-    font-size: 6rem;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: .5rem;
-    line-height: 8rem;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-}
+
 #plans-price {
     font-size: 2rem;
     font-weight: 100;
