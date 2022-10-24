@@ -45,20 +45,41 @@ header {
 
 }
 /* Navigation bar styling */
+.navbar-logo{
+    display:inline-block;
+    padding:3rem
+    
+}
 
+.navbar-logo a{
+    font-size:5rem;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    color:transparent;
+   z-index: 4;
+   background-image:linear-gradient(to right bottom, rgb(  88,   0, 255,0.8),rgba(0,215,255,0.8) );
+   -webkit-background-clip: text;
+}
 .navbar{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0;
+    background-color: #fff;
     position: fixed;
-    right: 4rem;
-    top:5rem;
+    top:3rem;
+    width:100%;
+    height: 6rem;
 }
 
 .navbar li {
+    margin-right: 8rem;
     display:flex;
     flex-direction:row;
     align-items:space-between;
     justify-content:flex-end;
-    font-size:1.3rem;
-    font-weight: 400;
+
     color:#0d56d9;
 }
 
@@ -66,20 +87,21 @@ header {
 .navbar-items:link,
 .navbar-items:focus{
     margin: 1rem;
+    font-size:1.3rem;
     display:inline-block;
-    color: #fff;
+    color:#0d56d9;
     padding:1rem;
     text-transform: uppercase;
     text-decoration: none;
     font-family:inherit;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: .30rem;
     transition: all .2s ease;
 }
 #cto-signin{
-    background-color: #fff;
+    background-color:#0d56d9;
     display:inline-block;
-    color:#0d56d9;
+    color:#fff;
     border-radius: 100px;
     padding:1rem;
     text-transform: uppercase;
@@ -92,7 +114,7 @@ header {
     color:#0d56d9;
     border-radius: 100px;
     padding:1rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
@@ -108,9 +130,10 @@ align-items: center;
 
 }
 
+/* Header styling */
 .header-logo {
     position: absolute;
-    top: -25px;
+    top:10px;
     left: -10px;
     height: 20rem;
     animation: slideRight 2s ease-out .3s;
@@ -201,4 +224,64 @@ align-items: center;
     opacity:1;
     translate:(0)
 }
+}
+/* About section Styling */
+.big-heading{
+    background-image:linear-gradient(to right bottom, rgb(  88,   0, 255,0.8),rgba(0,215,255,0.8) );
+    color:transparent;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing:.5rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    width:100%;
+    margin-bottom: 2rem;
+        }
+
+
+.about-section{
+    text-align: center;
+
+    margin-top:4rem;
+}
+
+.about-content__box{
+    
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+  background-image:linear-gradient(to right bottom,rgb(13, 86, 217,0.8),rgb(0, 154, 252,0.8));
+ 
+}
+.about-content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    border-radius:6px;
+padding: 3rem;
+flex-basis: 50%;
+}
+.about-content_heading{
+text-transform: uppercase;
+font-size:2rem;
+padding: 3rem;
+font-size:3rem;
+font-weight:400;
+letter-spacing: .5rem;
+text-align: center;
+
+}
+.about-content_paragraph{
+text-transform: uppercase;
+line-height: 3;
+font-size:1.4rem;
+letter-spacing:.1rem;
+font-weight:300;
+
+
 }
