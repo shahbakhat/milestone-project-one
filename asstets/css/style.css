@@ -43,12 +43,9 @@ body {
     height: 5rem;
 }
 
+
 .navbar-logo {
     display: inline-block;
-    padding: 3rem
-}
-
-.navbar-logo a {
     font-size: 5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -169,6 +166,7 @@ header {
 .header-big_btn a {
     text-align: center;
     text-decoration: none;
+    color: #0d56d9;
 }
 
 .header-big_btn,
@@ -371,8 +369,9 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color:#0d56d9;
+    background-color: #0d56d9;
 }
+
 .plans-card {
     flex-basis: 30%;
     margin-top: 3rem;
@@ -382,7 +381,8 @@ header {
     border-radius: 10px;
 
 }
-.plans-card_heading{
+
+.plans-card_heading {
     font-weight: 900;
     color: #fff;
     letter-spacing: .5rem;
@@ -403,8 +403,9 @@ header {
     font-size: 1rem;
     outline: none;
 }
+
 .plans-card__text:hover {
-    background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206,0.7));
+    background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206, 0.7));
     font-weight: 300;
     text-align: center;
     font-size: 2.5rem;
@@ -423,18 +424,21 @@ header {
     font-size: 4rem;
     font-weight: 100;
 }
+
 .plans-card1 {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.7),rgba(255, 255, 255)), url(../css/images/yoga-card.jpg);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(13, 86, 217, 0.7), rgba(255, 255, 255)), url(../css/images/yoga-card.jpg);
     background-size: cover;
     background-position: top;
 }
+
 .plans-card2 {
-    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.7),rgba(255, 255, 255)), url(../css/images/gym-card.jpg);
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217, 0.7), rgba(255, 255, 255)), url(../css/images/gym-card.jpg);
     background-position: top;
     background-size: cover;
 }
+
 .plans-card3 {
-    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217,0.9),rgba(255, 255, 255)), url(../css/images/gymclass.jpg);
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(13, 86, 217, 0.9), rgba(255, 255, 255)), url(../css/images/gymclass.jpg);
     background-position: top;
     background-size: cover;
 }
@@ -445,11 +449,13 @@ header {
     margin-top: 2rem;
     line-height: 6rem;
 }
+
 .plans-card p {
     font-size: 1.5rem;
     text-transform: capitalize;
     margin-top: 1rem;
 }
+
 #plan-cto {
     display: block;
     background-color: #fff;
@@ -472,133 +478,667 @@ header {
     text-decoration: none;
     margin-top: 3rem;
 }
+
 /* Stories Section styling */
 
-.story-section{
+.story-section {
     margin-top: 3rem;
     text-align: center;
 }
-.story-section__box{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
+
+.story-section__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-.story{
-padding: 3rem;
-   background-color:rgb(0, 207, 235,0.1);
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
+
+.story {
+    padding: 3rem;
+    background-color: rgb(0, 207, 235, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     margin-bottom: 3rem;
 }
-.story-image{
+
+.story-image {
     object-fit: cover;
 
-  background-color:rgb(0, 207, 235,0.3);
-   border: 6px solid #0d56d9;
-   padding: 2rem;
-   height:20rem;
-   width:20rem;
-    border-radius:50%;
+    background-color: rgb(0, 207, 235, 0.3);
+    border: 6px solid #0d56d9;
+    padding: 2rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
 }
-.story-quote{
-    font-size:2.5rem;
-  letter-spacing:.2rem;
-  line-height:3.5rem;
+
+.story-quote {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    line-height: 3.5rem;
     text-align: center;
-    color:#303030; 
+    color: #303030;
 }
-.story-name{
-  outline:none;
-   font-size:2rem;
-   font-weight:40000;
-   padding: 1rem;
-   border-radius:3px;
-   text-transform: uppercase;
-   color: #fff; 
-   background-color:rgb(13,  86, 217,1);
-   letter-spacing:1rem;
+
+.story-name {
+    outline: none;
+    font-size: 2rem;
+    font-weight: 40000;
+    padding: 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(13, 86, 217, 1);
+    letter-spacing: 1rem;
 }
+
 /* Sign Up section styling */
-.signup-section{
-    margin-top: 8rem; 
+.signup-section {
+    margin-top: 8rem;
 }
-.signup-section__box{
-    background-color:rgb(13,  86, 217,0.9);
-    padding:6rem
+
+.signup-section__box {
+    background-color: rgb(13, 86, 217, 0.9);
+    padding: 6rem
 }
-.signup-form__box{
+
+.signup-form__box {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../css/images/signup-form.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: top;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     height: 100vh;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
-.form-box{
+
+.form-box {
     padding: 6rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.form-content{
-width:50%;
+
+.form-content {
+    width: 50%;
 }
-.form-input{
-width: 100%;
+
+.form-input {
+    width: 100%;
     font-size: 1.5rem;
-    font-family:inherit;
+    font-family: inherit;
     padding: 1.5rem 2rem;
-    border-radius:2px;
-    color:rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.5);
     border-bottom: 3px solid transparent;
     transition: all .3s;
     border: none;
-    outline: none;box-shadow: 0 2rem 1rem rgb(0,0,0,0.1);
+    outline: none;
+    box-shadow: 0 2rem 1rem rgb(0, 0, 0, 0.1);
 }
-.form-input:focus{
-    outline:none;
-    box-shadow: 0 1rem 2rem rgb(0,0,0,0.2);
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
     border-bottom: 3px solid #0d56d9;
     transition: all .3s;
 }
 
-.form-input:not(:last-child){
-    margin-bottom:2rem;
+.form-input:not(:last-child) {
+    margin-bottom: 2rem;
 }
-.form-label{
+
+.form-label {
     font-size: 1.2rem;
-    font-weight:700;
-    margin-left:2rem;
+    font-weight: 700;
+    margin-left: 2rem;
     margin-top: .7rem;
-    display:block;
+    display: block;
     transition: all .3s;
 }
+
 .form-btn a {
-text-decoration: none;
-text-align: center;
-color: #0d56d9;
-background-color: #f7f7f7;
-font-size: 2rem;
-padding: 1rem;
-width: 5rem;
-display: block;
-height: 5rem;
-width: 16rem;
-border-radius: 100px;
-box-shadow: 0 2rem 1rem rgb(0,0,0,0.1);  
+    text-decoration: none;
+    text-align: center;
+    color: #0d56d9;
+    background-color: #f7f7f7;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 5rem;
+    display: block;
+    height: 5rem;
+    width: 16rem;
+    border-radius: 100px;
+    box-shadow: 0 2rem 1rem rgb(0, 0, 0, 0.1);
 }
-.form-btn a:hover{
+
+.form-btn a:hover {
     background-color: #0d56d9;
-    color:#fff;
+    color: #fff;
     transition: all .3s ease;
-    font-size:2rem;
-    border-radius:100px;
-    text-decoration: none;  
+    font-size: 2rem;
+    border-radius: 100px;
+    text-decoration: none;
 }
-.form-btns{
+
+.form-btns {
     margin-top: 2rem;
-  }
+}
+
+/* Footer Styling */
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #333333;
+    position: relative;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+p.copyright {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+
+/* Media query @1200px */
+@media screen and (max-width:1200px) {
+    .plans-card {
+        height: 50rem;
+    }
+}
+
+/* Media query @950px */
+@media screen and (max-width:950px) {
+
+    .navbar{
+        height: auto;
+        padding: 0;
+    }
+    .navbar-items{
+        justify-content:space-around;
+        margin-left: -2rem;
+        font-size: .6rem;
+    }
+    .navbar-logo{
+        font-size:3rem;
+    }
+    #nav-btn{
+        font-size:1.2rem;
+    }
+
+    .header-main_heading {
+        font-size: 8rem;
+    }
+    .header-sub_heading {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .header-logo{
+        margin-top:8rem;
+        height: 15rem;
+
+    }
+    .big-heading {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+    .plans-card__box {
+        padding: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .plans-card {
+        margin-top: -.8rem;
+        flex-basis: 33%;
+        align-items: center;
+        justify-content: space-between;
+        height: 50rem;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: center;
+        }
+ .plans-card__text p {
+            font-size: 1.5rem;
+            font-weight:300;
+        }
+    .signup-form__box {
+            background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(../css/img/trainer.jpg);
+            background-size: cover;
+            background-position: top;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+    
+        }
+        .form-input {
+    
+            height: 50%;
+            width: 200%;
+        }
+        .form-btns {
+            margin-top: 8rem;
+        }
+    }
+/* Media query @720px */
+@media screen and (max-width:720px) {
+    .navbar{flex-direction:column;
+    }
+    .navbar a{
+        font-size:5rem;
+        margin-bottom:-4rem;
+        }
+    
+        .header-main_heading {
+            font-size: 6rem;
+        }
+        .header-sub_heading {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    
+        .big-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+    
+        }
+        .about-content {
+            flex-basis: 100%;
+        }
+    
+        .feature-card1,
+        .feature-card4 {
+            flex-basis: 100%;
+        }
+    
+        .plans-card__box {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        .plans-card {
+       width:50rem;
+            margin-bottom: 2rem;
+        }
+    
+        .signup-form__box {
+            background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form.jpg);
+            background-size: cover;
+            background-position: top;
+            border-radius: 3px;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+    
+        }
+ }
+   
+
+/* Media query @640 */
+@media screen and (max-width:640px) {
+    .header-main_heading {
+        font-size: 7rem;
+
+    }
+
+    .header-sub_heading {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    #about-heading {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+
+    .about-content {
+        flex-basis: 100%;
+    }
+
+    .feature-section__card {
+        flex-basis: 100%;
+    }
+
+    .plans-card__box {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-form__box {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form);
+        background-size: cover;
+        background-position: top;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+
+    }
+ .form-input {
+        flex-basis: 100%;
+    }
+}
+
+/* Media query @480 */
+@media screen and (max-width:480px) {
+.navbar-logo{
+    margin-top:1rem;
+    font-size:3rem;
+    font-weight: 700;
+}
+.navbar{
+    align-items: center;
+    justify-content: center;
+}
+#nav-btn,
+#cto-signin{
+    font-size: 1rem;
+}
+.header-logo{
+    margin-top:9rem;
+}
+
+    .header-main_heading {
+        margin-top: 8rem;
+        font-size: 5rem;
+        margin-left: 5rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom:-8rem;
+    }
+
+    #about-heading {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+
+    .about-content {
+        flex-basis: 100%;
+        justify-content: space-around;
+    }
+
+    .about-content_heading {
+        font-size: 2rem;
+    }
+
+    .about-content_paragraph {
+        font-size: 1rem;
+        font-weight:400;
+
+    }
+
+    .about-content2 {
+        margin-top: -7rem;
+    }
+
+    .feature-card__heading {
+        font-size: 1.5rem;
+        font-weight:700;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+        flex-basis: 100%;
+
+    }
+    .feature-card p{
+        font-size:1.2rem;
+        font-weight: 700;
+    }
+
+    .plans-card__box {
+
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .plans-card {
+       width: 30rem;
+    }
+
+    .signup-form__box {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form.jpg);
+        background-size: cover;
+        background-position: top;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+
+    }
+
+
+    .form-input {
+        width: 21rem;
+        ;
+        margin-left: -4rem;
+        font-size: 1.2rem;
+    }
+
+    .form-btns {
+        margin-left: -1.5rem;
+        ;
+    }
+}
+
+
+
+@media screen and (max-width:370px) {
+    #nav-btn{
+        font-size: 1rem;
+    }
+    .navbar{
+    flex-direction: row-reverse;
+   flex-wrap: wrap;
+    }
+
+    .header-logo{
+        margin-top: 19rem;
+        height: 10rem;
+    }
+    .header-main_heading {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card__box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+       width: 25rem;
+        height: 42rem;
+    }
+
+    .feature-card__heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section__box {
+        padding: 1rem;
+    }
+
+    .feature-section__card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card__text {
+        font-size: .8rem;
+    }
+
+    .signup-form__box {
+        background-image: none;
+        background-color: transparent;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        visibility: hidden;
+
+    }
+
+    .signup-section__box {
+
+
+
+        background-color: rgb(0, 154, 252, 0.1);
+
+    }
+
+    .form-box {
+        visibility: visible;
+        margin-left: -8rem
+    }
+
+    .form-input {
+        width: 24rem;
+        margin-left: 1px;
+    }
+
+    .form-box__content label {
+        visibility: hidden;
+    }
+
+    .form-btns {
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Media query @320px */
+
+
+@media screen and (max-width:320px) {
+    .navbar-items{
+        visibility:hidden;
+    }
+    .navbar a{
+        font-size: 2rem;
+        font-weight:400;
+    }
+    .navbar{
+        text-align: center;
+        height:6rem;
+    }
+    .header-text_box{
+        margin-top:-12rem;
+    }
+    .header-main_heading{
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading{
+        font-size: .8rem;
+        letter-spacing: 0.2rem;
+    }
+    .header-logo{
+        margin-top:2rem;
+    }
+
+    .plans-card__box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+     width: 20rem;
+        height: 42rem;
+    }
+
+    .feature-card__heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section__box {
+        padding: 1rem;
+    }
+
+    .feature-section__card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card__text {
+        font-size: .8rem;
+    }
+
+    .signup-form__box {
+        background-image: none;
+        background-color: transparent;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        visibility: hidden;
+    }
+
+    .form-box {
+        visibility: visible;
+        margin-left: -8rem
+    }
+
+    .form-input {
+        width: 18rem;
+    }
+
+    .form-box__content label {
+        visibility: hidden;
+    }
+
+    .form-btns {
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+}
