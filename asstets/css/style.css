@@ -28,24 +28,21 @@ body {
     padding: 3rem;
 }
 
-/* Header styling  */
-header {
-    position: relative;
+/* Navigation bar styling */
+.navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 95vh;
-    background-image: linear-gradient(to right bottom, rgb(13, 86, 217, 0.9), rgb(0, 154, 252, 0.9)), url(../css/images/hero.jpg);
-    background-position: top;
-    background-size: cover;
-
-    background-repeat: no-repeat;
-    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 95%);
-    z-index: 1;
-
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: #fff;
+    position: fixed;
+    padding: 3rem;
+    width: 100%;
+    z-index: 7;
+    margin-top: -3rem;
+    height: 5rem;
 }
 
-/* Navigation bar styling */
 .navbar-logo {
     display: inline-block;
     padding: 3rem
@@ -63,26 +60,11 @@ header {
     -webkit-background-clip: text;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    background-color: #fff;
-    position: fixed;
-    top:2.2rem;
-    width: 100%;
-    height: 6rem;
-    
-}
-
 .navbar li {
     margin-right: 8rem;
     display: flex;
     flex-direction: row;
-    align-items: space-between;
-    justify-content: flex-end;
-
+    flex-wrap: wrap;
     color: #0d56d9;
 }
 
@@ -124,6 +106,23 @@ header {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
+/* Header styling */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 95vh;
+    background-image: linear-gradient(to right bottom, rgb(13, 86, 217, 0.9), rgb(0, 154, 252, 0.9)), url(../css/images/hero.jpg);
+    background-position: top;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 95%);
+    z-index: 1;
+
+}
+
 .header-text_box {
     margin-top: 12rem;
     display: flex;
@@ -136,7 +135,6 @@ header {
 
 }
 
-/* Header styling */
 .header-logo {
     position: absolute;
     top: 10px;
@@ -289,7 +287,6 @@ header {
     font-weight: 400;
     letter-spacing: .5rem;
     text-align: center;
-
 }
 
 .about-content_paragraph {
@@ -298,69 +295,184 @@ header {
     font-size: 1.4rem;
     letter-spacing: .1rem;
     font-weight: 300;
-
-
 }
 
 /* Feature section styling */
-.features-section{
-  
-    min-height:40vh;
-    
-margin-top: 2rem;
+.features-section {
+    min-height: 40vh;
+    margin-top: 2rem;
+}
 
-  
-    }
-    .feature-cards__box{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding:3rem;
-        background-image:linear-gradient(to right , rgb(13, 86, 217,0.8),rgb(0, 154, 252,0.8));
-   max-height:auto;
-    
-        
-   
-    }
-    .feature-card__heading{
-      
-        font-size:2.3rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing:.1rem;
-        text-align: center;
+.feature-cards__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-image: linear-gradient(to right, rgb(13, 86, 217, 0.8), rgb(0, 154, 252, 0.8));
+    max-height: auto;
+}
 
-    }
-   .feature-card{
-    display:flex;
+.feature-card__heading {
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.feature-card {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
-    font-size:1rem;
-    font-weight:400;
-    color:#303030;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #303030;
     text-transform: uppercase;
-    background-color:#fff;
-   padding:4rem;
-    line-height:2rem;
-    letter-spacing:.1rem;
+    background-color: #fff;
+    padding: 4rem;
+    line-height: 2rem;
+    letter-spacing: .1rem;
     border-radius: 4px;
     border: 2px solid #0d56d9;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
+}
 
-   }
-   .feature-card1 ,.feature-card2{
+.feature-card1,
+.feature-card2 {
     flex-basis: 50%;
-   }
-  
-   .feature-card3, .feature-card4{
-    flex-basis:50%;
-   }
-   .feature-card:hover{
-   transform:translateY(-15px);
- cursor:pointer;
-   transition:all .3s ease-out;
-   }
+}
+
+.feature-card3,
+.feature-card4 {
+    flex-basis: 50%;
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+/* Plans Section styling */
+
+.plans-section {
+    margin-top: 3rem;
+}
+
+.plans-card__box {
+    padding: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.plans-card {
+    flex-basis: 30%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.plans-card__text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+.plans-card__text:hover {
+    background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206));
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    transition: all .7s;
+    border-radius: 8px;
+}
+.plans-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.plans-card h4 {
+    font-size: 4rem;
+    font-weight: 100;
+}
+.plans-card1 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(255, 255, 255, 0.7)), url(../css/images/);
+    background-size: cover;
+    background-position: top;
+}
+.plans-card2 {
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.8)), url(../css/images/gym-card.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.plans-card3 {
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.8)), url(../css/images/yoga-gym.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.plans-card__main {
+    font-size: 6rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .5rem;
+    line-height: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#plans-price {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    line-height: 6rem;
+}
+.plans-card p {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+#plan-cto {
+    display: block;
+    background-color: #fff;
+    color: #303030;
+    font-size: 2rem;
+    border-radius: 100px;
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+#plan-cto:hover {
+    background-color: #0d56d9;
+    color: #fff;
+    display: block;
+    transition: all .4s ease;
+    font-size: 2rem;
+    border-radius: 100px;
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 3rem;
+}
