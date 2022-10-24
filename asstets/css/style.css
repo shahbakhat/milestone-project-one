@@ -28,8 +28,9 @@ body {
     padding: 3rem;
 }
 
-
+/* Header styling  */
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,14 +38,64 @@ header {
     background-image: linear-gradient(to right bottom, rgb(13, 86, 217, 0.9), rgb(0, 154, 252, 0.9)), url(../css/images/hero.jpg);
     background-position: top;
     background-size: cover;
-    position: relative;
+   
     background-repeat: no-repeat;
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 95%);
     z-index: 1;
 
 }
+/* Navigation bar styling */
 
+.navbar{
+    position: fixed;
+    right: 4rem;
+    top:5rem;
+}
 
+.navbar li {
+    display:flex;
+    flex-direction:row;
+    align-items:space-between;
+    justify-content:flex-end;
+    font-size:1.3rem;
+    font-weight: 400;
+    color:#0d56d9;
+}
+
+.navbar-items,
+.navbar-items:link,
+.navbar-items:focus{
+    margin: 1rem;
+    display:inline-block;
+    color: #fff;
+    padding:1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:inherit;
+    font-weight: 300;
+    letter-spacing: .30rem;
+    transition: all .2s ease;
+}
+#cto-signin{
+    background-color: #fff;
+    display:inline-block;
+    color:#0d56d9;
+    border-radius: 100px;
+    padding:1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar-items:hover{
+    margin: 1rem;
+    background-color: #fff;
+    display:inline-block;
+    color:#0d56d9;
+    border-radius: 100px;
+    padding:1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
 .header-text_box{
     margin-top: 12rem;
     display: flex;
@@ -120,4 +171,34 @@ align-items: center;
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+/* Header CSS only animations */
+
+@keyframes slideLeft{
+    0% {
+        opacity:0;
+        transform:translateX(-15rem)
+}
+80% {
+    
+    transform:translateX(2rem)
+}
+100% {
+    opacity:1;
+    translate:(0)
+}
+}
+@keyframes slideRight{
+    0% {
+        opacity:0;
+        transform:translateX(15rem)
+}
+80% {
+    
+    transform:translateX(-2rem)
+}
+100% {
+    opacity:1;
+    translate:(0)
+}
 }
