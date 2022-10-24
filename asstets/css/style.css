@@ -1,0 +1,123 @@
+/*
+primary color #0d56d9    rgb(13, 86, 217)
+secondary color #009AFC    rgb(0, 154, 252)
+other pallete colors #00CFEB   rgb(0, 207, 235)
+#6BFBCE     rgb(107, 251, 206)
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 95vh;
+    background-image: linear-gradient(to right bottom, rgb(13, 86, 217, 0.9), rgb(0, 154, 252, 0.9)), url(../css/images/hero.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 95%);
+    z-index: 1;
+
+}
+
+
+.header-text_box{
+    margin-top: 12rem;
+    display: flex;
+    justify-content:space-around;
+align-items: center;
+    flex-direction: column;
+    line-height: 8.5rem;
+    text-align: center;
+
+
+}
+
+.header-logo {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    height: 20rem;
+    animation: slideRight 2s ease-out .3s;
+}
+
+.header-main_heading {
+    font-size: 13rem;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    animation: slideLeft 1.5s ease-out .3s;
+
+}
+
+.header-sub_heading {
+    display: block;
+    letter-spacing: .49rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+
+    animation: slideRight 1.5s ease-out .3s;
+
+}
+
+.header-big_btn a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-big_btn,
+.header-big_btn:link,
+.header-big_btn:hover {
+    margin-top: 10rem;
+    background-color: #fff;
+    height: 8rem;
+    width: 20rem;
+    color: #0d56d9;
+    border-radius: 100px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.header-big_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.header-big_btn:active,
+.header-big_btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
