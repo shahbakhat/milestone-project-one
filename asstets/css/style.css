@@ -319,7 +319,7 @@ header {
     text-transform: uppercase;
     letter-spacing: .1rem;
     text-align: center;
-    color:white;
+    color: white;
     margin-bottom: 1rem;
     letter-spacing: .1rem;
 }
@@ -334,11 +334,12 @@ header {
     padding: 2rem;
     flex-basis: 25%;
     height: 50rem;
-    overflow:scroll;
+    overflow: scroll;
 
 
 }
-.feature-card_text{
+
+.feature-card_text {
     text-align: start;
     font-size: 1.4rem;
     font-weight: 300;
@@ -346,7 +347,7 @@ header {
     color: #f7f7f7;
     text-transform: uppercase;
     letter-spacing: .1rem;
-  
+
 
 }
 
@@ -360,7 +361,7 @@ header {
     margin-top: 3rem;
 }
 
-.plans-card__box {
+.plans-card_box {
     padding: 6rem;
     display: flex;
     flex-direction: row;
@@ -390,7 +391,7 @@ header {
     display: inline-block;
 }
 
-.plans-card__text {
+.plans-card_text {
     font-weight: 300;
     text-align: center;
     font-size: 3rem;
@@ -402,7 +403,7 @@ header {
     outline: none;
 }
 
-.plans-card__text:hover {
+.plans-card_text:hover {
     background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206, 0.7));
     font-weight: 300;
     text-align: center;
@@ -488,7 +489,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -503,7 +504,7 @@ header {
     align-items: center;
     text-align: center;
     margin-bottom: 3rem;
- 
+
 }
 
 .story-image {
@@ -542,12 +543,12 @@ header {
     margin-top: 8rem;
 }
 
-.signup-section__box {
+.signup-section_box {
     background-color: rgb(13, 86, 217, 0.9);
     padding: 6rem
 }
 
-.signup-form__box {
+.signup-form_box {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../css/images/signup-form.jpg);
     background-size: cover;
     background-position: top;
@@ -662,52 +663,60 @@ p.copyright {
 /* Media query @950px */
 @media screen and (max-width:950px) {
 
-    .navbar{
+    .navbar {
         height: auto;
         padding: 0;
     }
-    #navbar-btn{
-        font-size:1rem;
+
+    #navbar-btn {
+        font-size: 1rem;
     }
-    .navbar-logo{
-        font-size:3rem;
+
+    .navbar-logo {
+        font-size: 3rem;
     }
-   
+
 
     .header-main_heading {
         font-size: 8rem;
     }
+
     .header-sub_heading {
         font-size: 1.2rem;
         font-weight: 300;
     }
 
-    .header-logo{
-        margin-top:8rem;
+    .header-logo {
+        margin-top: 8rem;
         height: 15rem;
 
     }
-    .feature-card{
+
+    .feature-card {
         flex-basis: 50%;
         height: 35rem;
-        overflow:hidden;
-        justify-content:space-between;
+        overflow: hidden;
+        justify-content: space-between;
     }
-    .feature-card_heading{
+
+    .feature-card_heading {
         font-weight: 700;
         letter-spacing: .4rem;
     }
+
     .big-heading {
         font-size: 1.9rem;
         font-weight: 700;
     }
-    .plans-card__box {
+
+    .plans-card_box {
         padding: 2rem;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
+
     .plans-card {
         margin-top: -.8rem;
         flex-basis: 33%;
@@ -715,138 +724,154 @@ p.copyright {
         justify-content: space-between;
         height: 50rem;
         display: flex;
-        flex-direction:column;
-        justify-content:space-between;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        }
- .plans-card__text p {
-            font-size: 1.5rem;
-            font-weight:300;
-        }
-    .story-quote{
-        font-size:1.9rem;
     }
-    .signup-form__box {
-            background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(../css/img/trainer.jpg);
-            background-size: cover;
-            background-position: top;
-            border-radius: 3px;
-            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-    
-        }
-        .form-input {
-    
-            height: 50%;
-            width: 200%;
-        }
-        .form-btns {
-            margin-top: 8rem;
-        }
+
+    .plans-card_text p {
+        font-size: 1.5rem;
+        font-weight: 300;
     }
+
+    .story-quote {
+        font-size: 1.9rem;
+    }
+
+    .signup-form_box {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(../css/img/trainer.jpg);
+        background-size: cover;
+        background-position: top;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        height: 50%;
+        width: 200%;
+    }
+
+    .form-btns {
+        margin-top: 8rem;
+    }
+}
+
 /* Media query @720px */
 @media screen and (max-width:720px) {
-    .navbar{flex-direction:column;
+    .navbar {
+        flex-direction: column;
     }
-    .navbar a{
-        font-size:3rem;
-        }
-    
-        .header-main_heading {
-            font-size: 6rem;
-        }
-        .header-sub_heading {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-    
-        .big-heading {
-            font-size: 1.5rem;
-            font-weight: 700;
-    
-        }
-        .about-content {
-            flex-basis: 100%;
-        }
-    
-        .feature-card1,
-        .feature-card4 {
-            flex-basis: 100%;
-        }
-        .feature-card2,
-        .feature-card3{
-            overflow:scroll;
-        }
-    
-        .plans-card__box {
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-    
-        .plans-card {
-       width:50rem;
-            margin-bottom: 2rem;
-        }
-        .story-image{
-            height:12rem;
-            width: 12rem;
-            padding:0;
-        
-        }
-        .story-name{
-            font-size:1.5rem;
-        }
-    
-        .signup-form__box {
-            background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form.jpg);
-            background-size: cover;
-            background-position: top;
-            border-radius: 3px;
-            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-    
-        }
- }
-   
+
+    .navbar a {
+        font-size: 3rem;
+    }
+
+    .header-main_heading {
+        font-size: 6rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .big-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .about-content {
+        flex-basis: 100%;
+    }
+
+    .feature-card1,
+    .feature-card4 {
+        flex-basis: 100%;
+    }
+
+    .feature-card2,
+    .feature-card3 {
+        overflow: scroll;
+    }
+
+    .plans-card_box {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .plans-card {
+        width: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    .story-image {
+        height: 12rem;
+        width: 12rem;
+        padding: 0;
+    }
+
+    .story-name {
+        font-size: 1.5rem;
+    }
+
+    .signup-form_box {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form.jpg);
+        background-size: cover;
+        background-position: top;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
 
 /* Media query @640 */
 @media screen and (max-width:640px) {
-   
+
     .header-main_heading {
         font-size: 6rem;
         margin-left: 1rem;
     }
+
     .header-sub_heading {
         font-size: 1.3rem;
         font-weight: 300;
     }
-    .navbar a{
+
+    .navbar a {
         font-size: 2rem;
     }
-    #navbar-btn{
-        font-size:.8rem;
+
+    #navbar-btn {
+        font-size: .8rem;
     }
+
     #about-heading {
         font-size: 1.2rem;
         font-weight: 700;
     }
+
     .big-heading {
         font-size: 1.5rem;
         font-weight: 700;
 
     }
+
     .about-content {
         flex-basis: 100%;
     }
-    .plans-card__box {
+
+    .plans-card_box {
         align-items: center;
         justify-content: center;
     }
 
-    .signup-form__box {
+    .signup-form_box {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form);
         background-size: cover;
         background-position: top;
@@ -856,27 +881,29 @@ p.copyright {
         flex-direction: column;
 
     }
- .form-input {
+
+    .form-input {
         flex-basis: 100%;
     }
 }
 
 /* Media query @480 */
 @media screen and (max-width:480px) {
-.navbar-logo{
-    margin-top:1rem;
-    font-size:3rem;
-    font-weight: 700;
-}
-.navbar{
-    align-items: center;
-    justify-content: center;
-}
+    .navbar-logo {
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .navbar {
+        align-items: center;
+        justify-content: center;
+    }
 
 
-.header-logo{
-    margin-top:9rem;
-}
+    .header-logo {
+        margin-top: 9rem;
+    }
 
     .header-main_heading {
         margin-top: 8rem;
@@ -887,7 +914,7 @@ p.copyright {
     .header-sub_heading {
         font-size: 1rem;
         font-weight: 300;
-        margin-bottom:-8rem;
+        margin-bottom: -8rem;
     }
 
     #about-heading {
@@ -912,7 +939,7 @@ p.copyright {
 
     .about-content_paragraph {
         font-size: 1rem;
-        font-weight:400;
+        font-weight: 400;
 
     }
 
@@ -922,7 +949,7 @@ p.copyright {
 
     .feature-card_heading {
         font-size: 1.5rem;
-        font-weight:700;
+        font-weight: 700;
     }
 
     .feature-card {
@@ -930,29 +957,31 @@ p.copyright {
         flex-basis: 100%;
 
     }
-    .feature-card p{
-        font-size:1.2rem;
+
+    .feature-card p {
+        font-size: 1.2rem;
         font-weight: 300;
     }
 
-    .plans-card__box {
+    .plans-card_box {
 
         align-items: center;
         justify-content: space-around;
     }
 
     .plans-card {
-       width: 30rem;
+        width: 30rem;
     }
 
-    .story-name{
-        font-size:1rem;
-    }
-    .story-quote{
-        font-size:1.4rem;
+    .story-name {
+        font-size: 1rem;
     }
 
-    .signup-form__box {
+    .story-quote {
+        font-size: 1.4rem;
+    }
+
+    .signup-form_box {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(/css/img/signup-form.jpg);
         background-size: cover;
         background-position: top;
@@ -964,12 +993,13 @@ p.copyright {
         padding: 0;
 
     }
+
     .form-input {
         width: 21rem;
-        ;
         margin-left: -4rem;
         font-size: 1.2rem;
     }
+
     .form-btns {
         margin-left: -1.5rem;
         ;
@@ -979,22 +1009,25 @@ p.copyright {
 
 /* Media query @370 */
 @media screen and (max-width:370px) {
-    #nav-btn{
+    #nav-btn {
         font-size: 1rem;
     }
-    .navbar{
-    flex-direction: row-reverse;
-   flex-wrap: wrap;
+
+    .navbar {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
     }
 
-    .header-logo{
-        margin-top: 19rem;
+    .header-logo {
+       
         height: 10rem;
     }
+
     .header-main_heading {
         font-size: 4rem;
         margin-left: 2rem;
     }
+
     .header-sub_heading {
         font-size: 1rem;
         letter-spacing: 0.1rem;
@@ -1006,36 +1039,32 @@ p.copyright {
 
     }
 
-    .plans-card__box {
+    .plans-card_box {
         padding: 2rem;
 
     }
 
     .plans-card {
-       width: 25rem;
+        width: 25rem;
         height: 42rem;
+        overflow:
     }
 
-    .feature-card__heading {
+    .feature-card_heading {
         font-size: 1.5rem;
 
     }
-
-    .feature-section__box {
-        padding: 1rem;
-    }
-
-    .feature-section__card {
-        flex-basis: 100%;
-
+    .feature-section_card {
+        flex-basis: 110%;
         padding: .5rem;
+
     }
 
-    .feature-card__text {
+    .feature-card_text {
         font-size: .8rem;
     }
 
-    .signup-form__box {
+    .signup-form_box {
         background-image: none;
         background-color: transparent;
         border-radius: 3px;
@@ -1048,12 +1077,213 @@ p.copyright {
 
     }
 
-    .signup-section__box {
-
-
-
+    .signup-section_box {
         background-color: rgb(0, 154, 252, 0.1);
+    }
 
+    .form-box {
+        visibility: visible;
+        margin-left: -8rem
+    }
+
+    .form-input {
+        width: 24rem;
+        margin-left: 1px;
+    }
+
+    .form-box__content label {
+        visibility: hidden;
+    }
+
+    .form-btns {
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Media query @350px */
+
+@media screen and (max-width:350px) {
+    #nav-btn {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        margin-top:21rem;
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card_box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+        width: 25rem;
+        height: 42rem;
+    }
+
+    .feature-card_heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section_box {
+        padding: 1rem;
+    }
+
+    .feature-section_card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card_text {
+        font-size: .8rem;
+    }
+
+    .signup-form_box {
+        background-image: none;
+        background-color: transparent;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        visibility: hidden;
+
+    }
+
+    .signup-section_box {
+        background-color: rgb(0, 154, 252, 0.1);
+    }
+
+    .form-box {
+        visibility: visible;
+        margin-left: -8rem
+    }
+
+    .form-input {
+        width: 6rem;
+        margin-left: 1px;
+    }
+
+    .form-box_content label {
+        visibility: hidden;
+    }
+
+    .form-btns {
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Media query @414px */
+@media only screen and (max-width: 414px) {
+
+    #navbar-btn {
+        font-size: .7rem;
+        margin-top: -15rem;
+        margin-bottom: rem;
+    }
+
+    .navbar-logo {
+        scale: 0;
+    }
+
+    .navbar {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+    }
+
+    .header-logo {
+        margin-top: 14rem;
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card_box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+        width: 25rem;
+        height: 42rem;
+    }
+
+    .feature-card_heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section_box {
+        padding: 1rem;
+    }
+
+    .feature-section_card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card_text {
+        font-size: .8rem;
+    }
+
+    .signup-form_box {
+        background-image: none;
+        background-color: transparent;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        visibility: hidden;
+
+    }
+
+    .signup-section_box {
+        background-color: rgb(0, 154, 252, 0.1);
     }
 
     .form-box {
@@ -1077,66 +1307,75 @@ p.copyright {
 }
 
 /* Media query @320px */
+@media only screen and (max-width: 320px) {
 
+    #navbar-btn {
+        scale: 0;
+    }
 
-@media screen and (max-width:320px) {
-    .navbar-items{
-        visibility:hidden;
+    .navbar-logo {
+        scale: 1;
+        margin-left: 5.5rem;
     }
-    .navbar a{
-        font-size: 2rem;
-        font-weight:400;
-    }
-    .navbar{
-        text-align: center;
-        height:6rem;
+    .navbar {
+        flex-direction:column;
+        flex-wrap: wrap;
+        height:8rem;
     }
     .header-text_box{
-        margin-top:-12rem;
+        margin-top: -15rem;
     }
-    .header-main_heading{
-        font-size: 3rem;
+    .header-logo {
+        margin-top:2rem;
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        font-size: 2rem;
         margin-left: 2rem;
     }
 
-    .header-sub_heading{
-        font-size: .8rem;
-        letter-spacing: 0.2rem;
-    }
-    .header-logo{
-        margin-top:2rem;
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
     }
 
-    .plans-card__box {
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card_box {
         padding: 2rem;
 
     }
 
     .plans-card {
-     width: 20rem;
+        width: 22rem;
         height: 42rem;
     }
 
-    .feature-card__heading {
+    .feature-card_heading {
         font-size: 1.5rem;
 
     }
 
-    .feature-section__box {
+    .feature-section_box {
         padding: 1rem;
     }
 
-    .feature-section__card {
+    .feature-section_card {
         flex-basis: 100%;
 
         padding: .5rem;
     }
 
-    .feature-card__text {
+    .feature-card_text {
         font-size: .8rem;
     }
 
-    .signup-form__box {
+    .signup-form_box {
         background-image: none;
         background-color: transparent;
         border-radius: 3px;
@@ -1146,6 +1385,11 @@ p.copyright {
         height: 100%;
         padding: 0;
         visibility: hidden;
+
+    }
+
+    .signup-section_box {
+        background-color: rgb(0, 154, 252, 0.1);
     }
 
     .form-box {
@@ -1155,14 +1399,15 @@ p.copyright {
 
     .form-input {
         width: 18rem;
+        margin-left: 1px;
     }
 
-    .form-box__content label {
+    .form-box_content label {
         visibility: hidden;
     }
 
     .form-btns {
-        margin-left: 2rem;
-        margin-top: 4rem;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
     }
 }
