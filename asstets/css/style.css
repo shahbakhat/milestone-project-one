@@ -3,7 +3,7 @@ primary color #0d56d9    rgb(13, 86, 217)
 secondary color #009AFC    rgb(0, 154, 252)
 other pallete colors #00CFEB   rgb(0, 207, 235)
 #6BFBCE     rgb(107, 251, 206)
-
+ 
 */
 * {
     margin: 0;
@@ -82,7 +82,7 @@ body {
     transition: all .2s ease;
 }
 
-#cto-signin {
+.navbar .cto-signin {
     background-color: #0d56d9;
     display: inline-block;
     color: #fff;
@@ -302,59 +302,57 @@ header {
     margin-top: 2rem;
 }
 
-.feature-cards__box {
+.feature-cards_box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: 1rem;
     background-image: linear-gradient(to right, rgb(13, 86, 217, 0.8), rgb(0, 154, 252, 0.8));
-    max-height: auto;
+    min-height: 60vh;
 }
 
-.feature-card__heading {
-    font-size: 2.3rem;
-    font-weight: 500;
+.feature-card_heading {
+    font-size: 2rem;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: .1rem;
     text-align: center;
+    color:white;
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
 }
 
 .feature-card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: nowrap;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #303030;
-    text-transform: uppercase;
-    background-color: #fff;
-    padding: 4rem;
-    line-height: 2rem;
-    letter-spacing: .1rem;
+    flex-wrap: wrap;
     border-radius: 4px;
-    border: 2px solid #0d56d9;
-    margin-bottom: 2rem;
+    padding: 2rem;
+    flex-basis: 25%;
+    height: 50rem;
+    overflow:scroll;
+
+
+}
+.feature-card_text{
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  
+
 }
 
-.feature-card1,
-.feature-card2 {
-    flex-basis: 50%;
-}
 
-.feature-card3,
-.feature-card4 {
-    flex-basis: 50%;
-}
 
-.feature-card:hover {
-    transform: translateY(-15px);
-    cursor: pointer;
-    transition: all .3s ease-out;
-}
+
 
 /* Plans Section styling */
 
@@ -488,11 +486,15 @@ header {
 
 .story-section__box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .story {
+
     padding: 3rem;
     background-color: rgb(0, 207, 235, 0.1);
     display: flex;
@@ -501,6 +503,7 @@ header {
     align-items: center;
     text-align: center;
     margin-bottom: 3rem;
+ 
 }
 
 .story-image {
@@ -663,17 +666,13 @@ p.copyright {
         height: auto;
         padding: 0;
     }
-    .navbar-items{
-        justify-content:space-around;
-        margin-left: -2rem;
-        font-size: .6rem;
+    #navbar-btn{
+        font-size:1rem;
     }
     .navbar-logo{
         font-size:3rem;
     }
-    #nav-btn{
-        font-size:1.2rem;
-    }
+   
 
     .header-main_heading {
         font-size: 8rem;
@@ -687,6 +686,16 @@ p.copyright {
         margin-top:8rem;
         height: 15rem;
 
+    }
+    .feature-card{
+        flex-basis: 50%;
+        height: 35rem;
+        overflow:hidden;
+        justify-content:space-between;
+    }
+    .feature-card_heading{
+        font-weight: 700;
+        letter-spacing: .4rem;
     }
     .big-heading {
         font-size: 1.9rem;
@@ -714,6 +723,9 @@ p.copyright {
             font-size: 1.5rem;
             font-weight:300;
         }
+    .story-quote{
+        font-size:1.9rem;
+    }
     .signup-form__box {
             background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 1000%, transparent 50%), url(../css/img/trainer.jpg);
             background-size: cover;
@@ -738,8 +750,7 @@ p.copyright {
     .navbar{flex-direction:column;
     }
     .navbar a{
-        font-size:5rem;
-        margin-bottom:-4rem;
+        font-size:3rem;
         }
     
         .header-main_heading {
@@ -763,6 +774,10 @@ p.copyright {
         .feature-card4 {
             flex-basis: 100%;
         }
+        .feature-card2,
+        .feature-card3{
+            overflow:scroll;
+        }
     
         .plans-card__box {
             align-items: center;
@@ -773,6 +788,15 @@ p.copyright {
         .plans-card {
        width:50rem;
             margin-bottom: 2rem;
+        }
+        .story-image{
+            height:12rem;
+            width: 12rem;
+            padding:0;
+        
+        }
+        .story-name{
+            font-size:1.5rem;
         }
     
         .signup-form__box {
@@ -790,35 +814,33 @@ p.copyright {
 
 /* Media query @640 */
 @media screen and (max-width:640px) {
+   
     .header-main_heading {
-        font-size: 7rem;
-
+        font-size: 6rem;
+        margin-left: 1rem;
     }
-
     .header-sub_heading {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 300;
     }
-
+    .navbar a{
+        font-size: 2rem;
+    }
+    #navbar-btn{
+        font-size:.8rem;
+    }
     #about-heading {
         font-size: 1.2rem;
         font-weight: 700;
     }
-
     .big-heading {
         font-size: 1.5rem;
         font-weight: 700;
 
     }
-
     .about-content {
         flex-basis: 100%;
     }
-
-    .feature-section__card {
-        flex-basis: 100%;
-    }
-
     .plans-card__box {
         align-items: center;
         justify-content: center;
@@ -850,10 +872,8 @@ p.copyright {
     align-items: center;
     justify-content: center;
 }
-#nav-btn,
-#cto-signin{
-    font-size: 1rem;
-}
+
+
 .header-logo{
     margin-top:9rem;
 }
@@ -900,7 +920,7 @@ p.copyright {
         margin-top: -7rem;
     }
 
-    .feature-card__heading {
+    .feature-card_heading {
         font-size: 1.5rem;
         font-weight:700;
     }
@@ -912,7 +932,7 @@ p.copyright {
     }
     .feature-card p{
         font-size:1.2rem;
-        font-weight: 700;
+        font-weight: 300;
     }
 
     .plans-card__box {
@@ -923,6 +943,13 @@ p.copyright {
 
     .plans-card {
        width: 30rem;
+    }
+
+    .story-name{
+        font-size:1rem;
+    }
+    .story-quote{
+        font-size:1.4rem;
     }
 
     .signup-form__box {
@@ -937,15 +964,12 @@ p.copyright {
         padding: 0;
 
     }
-
-
     .form-input {
         width: 21rem;
         ;
         margin-left: -4rem;
         font-size: 1.2rem;
     }
-
     .form-btns {
         margin-left: -1.5rem;
         ;
@@ -953,7 +977,7 @@ p.copyright {
 }
 
 
-
+/* Media query @370 */
 @media screen and (max-width:370px) {
     #nav-btn{
         font-size: 1rem;
