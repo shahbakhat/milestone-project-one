@@ -1019,7 +1019,7 @@ p.copyright {
     }
 
     .header-logo {
-       
+
         height: 10rem;
     }
 
@@ -1054,6 +1054,7 @@ p.copyright {
         font-size: 1.5rem;
 
     }
+
     .feature-section_card {
         flex-basis: 110%;
         padding: .5rem;
@@ -1114,7 +1115,7 @@ p.copyright {
     }
 
     .header-logo {
-        margin-top:21rem;
+        margin-top: 21rem;
         height: 10rem;
     }
 
@@ -1317,16 +1318,19 @@ p.copyright {
         scale: 1;
         margin-left: 5.5rem;
     }
+
     .navbar {
-        flex-direction:column;
+        flex-direction: column;
         flex-wrap: wrap;
-        height:8rem;
+        height: 8rem;
     }
-    .header-text_box{
+
+    .header-text_box {
         margin-top: -15rem;
     }
+
     .header-logo {
-        margin-top:2rem;
+        margin-top: 2rem;
         height: 10rem;
     }
 
