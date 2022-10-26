@@ -3,7 +3,6 @@ primary color #0d56d9    rgb(13, 86, 217)
 secondary color #009AFC    rgb(0, 154, 252)
 other pallete colors #00CFEB   rgb(0, 207, 235)
 #6BFBCE     rgb(107, 251, 206)
- 
 */
 * {
     margin: 0;
@@ -519,6 +518,7 @@ header {
 }
 
 .story-quote {
+    font-family: inherit;
     font-size: 2.5rem;
     letter-spacing: .2rem;
     line-height: 3.5rem;
@@ -847,7 +847,7 @@ p.copyright {
         font-size: 2rem;
     }
 
-    #navbar-btn {
+    .navbar .navbar-items {
         font-size: .8rem;
     }
 
@@ -893,16 +893,24 @@ p.copyright {
 /* Media query @480 */
 @media screen and (max-width:480px) {
     .navbar-logo {
-        margin-top: 1rem;
+        margin: 1rem 0 -6rem 12rem;
         font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .navbar{
+        align-items: flex-start;
+    }
+    .navbar ul{
+        padding:0;
+        flex-wrap: nowrap;
+        margin-left:-1rem;;
+    }
+    #signin-btn{
+        width:7rem;
+        font-size:.7rem;
         font-weight: 700;
     }
-
-    .navbar {
-        align-items: center;
-        justify-content: center;
-    }
-
 
     .header-logo {
         margin-top: 9rem;
@@ -1012,13 +1020,11 @@ p.copyright {
 
 /* Media query @370 */
 @media screen and (max-width:370px) {
-    #nav-btn {
-        font-size: 1rem;
+    .navbar .navbar-items {
+        font-size: .7rem;
     }
-
-    .navbar {
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+    #home-btn{
+        margin-left:5rem;
     }
 
     .header-logo {
@@ -1113,8 +1119,13 @@ p.copyright {
     }
 
     .navbar {
-        flex-direction: row-reverse;
+
+        flex-direction:row;
         flex-wrap: wrap;
+    }
+    .navbar ul{
+        flex-direction: row;
+        align-items:flex-end
     }
 
     .header-logo {
@@ -1207,28 +1218,47 @@ p.copyright {
 /* Media query @414px */
 @media only screen and (max-width: 414px) {
 
-    #navbar-btn {
-        font-size: .7rem;
-        margin-top: -15rem;
-        margin-bottom: rem;
-    }
-
     .navbar-logo {
         scale: 0;
+        transform:translateY(-8rem);
     }
-
-    .navbar {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+    .navbar{
+        height:8rem;
+        align-items:flex-end;
+    }
+    .navbar ul{
+        position:relative;
+        margin-left:0;
+        padding:0;
+        flex-wrap:wrap;
+        margin-top:-5rem;
+        width:35rem;
+        align-items:baseline;
+        justify-content: space-around;
+    }
+    #home-btn,
+    #about-btn,
+    #features-btn,
+    #plans-btn{
+        margin-right: -4rem;
 
     }
-
+    #signin-btn{
+        width:7rem;
+        font-size:.7rem;
+        font-weight: 700;
+        margin-top: -9rem;
+        position: absolute;
+        top:10rem;
+        left:29rem;
+    }
     .header-logo {
-        margin-top: 14rem;
+        margin-top: 6rem;
         height: 10rem;
     }
 
     .header-main_heading {
+        margin-top:-10rem;
         font-size: 4rem;
         margin-left: 2rem;
     }
@@ -1312,25 +1342,21 @@ p.copyright {
 
 /* Media query @320px */
 @media only screen and (max-width: 320px) {
-
-    #navbar-btn {
-        scale: 0;
-    }
+.navbar ul{
+margin-left: -9rem;
+}
 
     .navbar-logo {
         scale: 1;
-        margin-left: 5.5rem;
     }
 
     .navbar {
         flex-direction: column;
         flex-wrap: wrap;
-        height: 8rem;
+        justify-content: flex-start;
+        height: 5rem;
     }
 
-    .header-text_box {
-        margin-top: -15rem;
-    }
 
     .header-logo {
         margin-top: 2rem;
