@@ -371,13 +371,14 @@ header {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4rem 3rem rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-out;
 
 }.plans-card:hover {
     background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206, 0.7));
     font-weight: 300;
     color: #fff;
     font-size: 1rem;
-    transition: all .4s ease-out;
+    cursor: pointer;
 }
 .plans-card_text{
     display: flex;
@@ -426,9 +427,10 @@ header {
     display: block;
     background-color: #fff;
     color: #303030;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight:300;
     border-radius: 100px;
-    padding: 1rem;
+    padding: 2rem;
     text-decoration: none;
     transition: all .4s ease;
 }
@@ -437,8 +439,8 @@ header {
     background-color: #0d56d9;
     color: #fff;
     display: block;
-    font-size: 2rem;
     text-decoration: none;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 /* Stories Section styling */
