@@ -377,6 +377,7 @@ header {
     font-weight: 300;
     color: #fff;
     font-size: 1rem;
+    transition: all .4s ease-out;
 }
 .plans-card_text{
     display: flex;
