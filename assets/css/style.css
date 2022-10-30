@@ -65,7 +65,7 @@ body {
     list-style: none;
 }
 
-.navbar-items,
+.navbar-items,.form-submit_btn,
 .navbar-items:link,
 .navbar-items:focus {
     margin: 1rem;
@@ -79,6 +79,8 @@ body {
     font-weight: 700;
     letter-spacing: .30rem;
     transition: all .2s ease;
+    border: none;
+    border-radius: 100px;
 }
 
 .navbar .cto-signin {
@@ -101,6 +103,20 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.form-submit_btn:hover{
+    margin: 1rem;
+    background-color: #fff;
+    display: inline-block;
+    color: #0d56d9;
+    border-radius: 100px;
+    padding: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: translatey(-3px);
 }
 
 /* Header styling */
@@ -362,7 +378,7 @@ header {
 }
 
 .plans-card {
-    background-image: linear-gradient(to right bottom, rgb(0, 0, 0,.6), rgb(0, 154, 252,.5), rgb(88, 0, 255));
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0, .6), rgb(0, 154, 252, .5), rgb(88, 0, 255));
     flex-basis: 32%;
     margin-top: 3rem;
     display: flex;
@@ -373,18 +389,21 @@ header {
     box-shadow: 0 4rem 3rem rgba(0, 0, 0, 0.5);
     transition: all .3s ease-out;
 
-}.plans-card:hover {
+}
+
+.plans-card:hover {
     background-image: linear-gradient(to right bottom, rgb(13, 86, 217), rgb(107, 251, 206, 0.7));
     font-weight: 300;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
 }
-.plans-card_text{
+
+.plans-card_text {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .plans-card_heading {
@@ -398,29 +417,31 @@ header {
 }
 
 .plans-card p,
-.plans-btn{
+.plans-btn {
     font-weight: 300;
     text-align: center;
     font-size: 1.5rem;
     line-height: 3rem;
     text-transform: uppercase;
-    padding:1rem;
+    padding: 1rem;
     color: #fff;
     outline: none;
     text-transform: capitalize;
 }
+
 .plans-card h3 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1rem;
 }
+
 #yoga-price,
 #gym-price,
-#yogym-price{
-    font-size:6rem;
+#yogym-price {
+    font-size: 6rem;
     font-weight: 100;
     margin-bottom: 3rem;
-    color:#f7f7f7;
+    color: #f7f7f7;
 }
 
 .plans-btn {
@@ -428,7 +449,7 @@ header {
     background-color: #fff;
     color: #303030;
     font-size: 2.5rem;
-    font-weight:300;
+    font-weight: 300;
     border-radius: 100px;
     padding: 2rem;
     text-decoration: none;
@@ -503,16 +524,16 @@ header {
 }
 
 /* Sign Up section styling */
-.signup-section {
+.contact-section {
     margin-top: 8rem;
 }
 
-.signup-section_box {
+.contact-section_box {
     padding: 6rem
 }
 
-.signup-form_box {
-    background-color:#0d56d9;
+.contact-form_box {
+    background-color: #0d56d9;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -520,20 +541,16 @@ header {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
-
-.form-box {
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .form-content {
-    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-between;
+    padding:16rem;
 }
 
 .form-input {
-    width: 100%;
+    width:50%;
     font-size: 1.5rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
@@ -545,12 +562,14 @@ header {
     outline: none;
     box-shadow: 0 2rem 1rem rgb(0, 0, 0, 0.2);
 }
-.form-input::placeholder{
-    color:#0d56d9;
+
+.form-input::placeholder {
+    color: #0d56d9;
     font-family: inherit;
-    letter-spacing:.2rem;
+    letter-spacing: .2rem;
     font-weight: 700;
 }
+
 .form-input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
@@ -566,12 +585,12 @@ header {
     font-size: 1.7rem;
     font-weight: 300;
     margin-left: 2rem;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     display: block;
     transition: all .3s;
     color: #f7f7f7;
     text-transform: capitalize;
-    width:10rem;
+    width: 10rem;
 }
 
 .form-btn a {
@@ -612,9 +631,9 @@ header {
     margin-top: 2rem;
 }
 
-.footer h4{
+.footer h4 {
     position: absolute;
-    bottom: 5px;  
+    bottom: 5px;
     right: 5px;
     color: #fff;
     line-height: 40px;
@@ -755,9 +774,11 @@ header {
     .about-content {
         flex-basis: 100%;
     }
-    .feature-card{
+
+    .feature-card {
         flex-basis: 100%;
     }
+
     .plans-card_box {
         align-items: center;
         justify-content: center;
@@ -780,7 +801,7 @@ header {
     }
 
     .signup-form_box {
-       background-color: #0d56d9;
+        background-color: #0d56d9;
         background-size: cover;
         background-position: top;
         border-radius: 3px;
@@ -832,8 +853,9 @@ header {
         align-items: center;
         justify-content: center;
     }
-    .plans-card{
-       width:40rem;
+
+    .plans-card {
+        width: 40rem;
     }
 
     .signup-form_box {
@@ -859,17 +881,20 @@ header {
         font-weight: 300;
     }
 
-    .navbar{
+    .navbar {
         align-items: flex-start;
     }
-    .navbar ul{
-        padding:0;
+
+    .navbar ul {
+        padding: 0;
         flex-wrap: nowrap;
-        margin-left:-1rem;;
+        margin-left: -1rem;
+        ;
     }
-    #signin-btn{
-        width:7rem;
-        font-size:.7rem;
+
+    #signin-btn {
+        width: 7rem;
+        font-size: .7rem;
         font-weight: 700;
     }
 
@@ -934,9 +959,11 @@ header {
         font-size: 1.2rem;
         font-weight: 300;
     }
-.plans-card h3{
-    font-size:4rem;
-}
+
+    .plans-card h3 {
+        font-size: 4rem;
+    }
+
     .plans-card_box {
 
         align-items: center;
@@ -985,8 +1012,9 @@ header {
     .navbar .navbar-items {
         font-size: .7rem;
     }
-    #home-btn{
-        margin-left:5rem;
+
+    #home-btn {
+        margin-left: 5rem;
     }
 
     .header-logo {
@@ -1045,8 +1073,9 @@ header {
         height: 100%;
         visibility: hidden;
     }
+
     .signup-section_box {
-        background-color:#0d56d9;
+        background-color: #0d56d9;
     }
 
     /* .form-box {
@@ -1078,12 +1107,13 @@ header {
 
     .navbar {
 
-        flex-direction:row;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    .navbar ul{
+
+    .navbar ul {
         flex-direction: row;
-        align-items:flex-end
+        align-items: flex-end
     }
 
     .header-logo {
@@ -1135,6 +1165,7 @@ header {
     .feature-card_text {
         font-size: .8rem;
     }
+
     .signup-form_box {
         background-image: none;
         background-color: transparent;
@@ -1146,9 +1177,11 @@ header {
         padding: 0;
         visibility: hidden;
     }
+
     .signup-section_box {
-        background-color:#0d56d9;
+        background-color: #0d56d9;
     }
+
     .form-box {
         visibility: visible;
         margin-left: -8rem
@@ -1174,45 +1207,50 @@ header {
 
     .navbar-logo {
         transform: scale(0);
-        transform:translateY(-8rem);
+        transform: translateY(-8rem);
     }
-    .navbar{
-        height:8rem;
-        align-items:flex-end;
+
+    .navbar {
+        height: 8rem;
+        align-items: flex-end;
     }
-    .navbar ul{
-        position:relative;
-        margin-left:0;
-        padding:0;
-        flex-wrap:wrap;
-        margin-top:-5rem;
-        width:35rem;
-        align-items:baseline;
+
+    .navbar ul {
+        position: relative;
+        margin-left: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        margin-top: -5rem;
+        width: 35rem;
+        align-items: baseline;
         justify-content: space-around;
     }
+
     #home-btn,
     #about-btn,
     #features-btn,
-    #plans-btn{
+    #plans-btn {
         margin-right: -4rem;
 
     }
-    #signin-btn{
-        width:7rem;
-        font-size:.7rem;
+
+    #signin-btn {
+        width: 7rem;
+        font-size: .7rem;
         font-weight: 700;
         margin-top: -9rem;
         position: absolute;
-        top:10rem;
-        left:29rem;
+        top: 10rem;
+        left: 29rem;
     }
+
     .header-logo {
         margin-top: 6rem;
         height: 10rem;
     }
 
     .header-main_heading {
-        margin-top:-10rem;
+        margin-top: -10rem;
         font-size: 4rem;
         margin-left: 2rem;
     }
@@ -1296,9 +1334,9 @@ header {
 
 /* Media query @320px */
 @media only screen and (max-width: 320px) {
-.navbar ul{
-margin-left: -9rem;
-}
+    .navbar ul {
+        margin-left: -9rem;
+    }
 
     .navbar-logo {
         transform: scale(0);
@@ -1376,7 +1414,7 @@ margin-left: -9rem;
     }
 
     .signup-section_box {
-        background-color:#0d56d9;
+        background-color: #0d56d9;
     }
 
     .form-box {
@@ -1388,16 +1426,15 @@ margin-left: -9rem;
         width: 18rem;
         margin-left: 1px;
     }
-.form-input::placeholder{
-    font-size: 1;
-    letter-spacing:0;
-}
+
+    .form-input::placeholder {
+        font-size: 1;
+        letter-spacing: 0;
+    }
+
     .form-box_content label {
         visibility: hidden;
     }
 
-    .form-btns {
-        margin-left: 1.5rem;
-        margin-top: 2rem;
-    }
+  
 }
