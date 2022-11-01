@@ -539,7 +539,7 @@ header {
 
 .form-content textarea {
     border: none;
-    width: 50%;
+    width: 90%;
     height: 30rem;
     font-size: 1.5rem;
     color: black;
@@ -550,7 +550,7 @@ header {
 }
 
 .form-input {
-    width: 50%;
+    width: 90%;
     display: block;
     font-size: 1.5rem;
     font-family: inherit;
@@ -631,11 +631,6 @@ header {
         height: auto;
         padding: 0;
     }
-
-    #navbar-btn {
-        font-size: 1rem;
-    }
-
     .navbar-logo {
         font-size: 3rem;
     }
@@ -769,15 +764,12 @@ header {
         font-size: 1.3rem;
         font-weight: 300;
     }
-
-    .navbar a {
-        font-size: 2rem;
-    }
-
+.navbar ul {
+    margin-left: -6rem;
+}
     .navbar .navbar-items {
-        font-size: .8rem;
+        font-size: 1;
     }
-
     #about-heading {
         font-size: 1.2rem;
         font-weight: 700;
@@ -809,15 +801,11 @@ header {
         font-size: 3rem;
         font-weight: 300;
     }
-
-    .navbar ul {
-        margin-left: -6rem;
-
-    }
-
+.navbar .navbar-items{
+    font-size:1rem;
+}
     #contact-btn {
-        width: 10rem;
-        font-size: .7rem;
+        font-size: 1rem;
         font-weight: 700;
     }
 
@@ -909,19 +897,16 @@ header {
     }
 
     .navbar .navbar-items {
-        font-size: .5rem;
+        font-size: .9rem;
         margin-left: -1rem;
     }
 
     #contact-btn {
-        font-size: .5rem;
+        font-size: .6rem;
         font-weight: 700;
-        margin-top: -5rem;
-        width: 6rem;
-        height: 3rem;
         position: absolute;
-        top: 6rem;
-        left: 33rem;
+        left: 33.5rem;
+        margin-top: -1.8rem;
     }
 
     .navbar-logo {
@@ -1004,13 +989,13 @@ header {
     }
 
     .navbar .navbar-items {
-        font-size: .7rem;
+        font-size: .9rem;
+        margin-left: -3rem;;
     }
 
     #contact-btn {
         position: absolute;
-        top: 6rem;
-        left: 29rem;
+        left: 30rem;
     }
 
     #about-btn,
@@ -1075,8 +1060,7 @@ header {
 
     .navbar .navbar-items {
         margin-left: -3.5rem;
-        ;
-        font-size: .5rem;
+        font-size: .8rem;
     }
 
 
@@ -1134,16 +1118,21 @@ header {
 
 /* Media query @320px */
 @media only screen and (max-width: 320px) {
-
+    .navbar .navbar-items{
+        font-size:.7rem;
+    }
     #about-btn,
     #features-btn,
     #plans-btn {
-        margin-left: -7.5rem;
+        margin-left:-7.5rem;
+    }
+    .navbar ul{
+        margin-left: -1rem;;
     }
 
     #contact-btn {
-        top: 6rem;
-        left: 27.5rem;
+        font-size: .7;
+        left: 28rem;
     }
 
     .header-logo {
