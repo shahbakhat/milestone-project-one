@@ -28,24 +28,22 @@ body {
 }
 
 /* Navigation bar styling */
-.navbar {
+.navbar {margin-top: -1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #fff;
     position: fixed;
-    padding: 3rem;
     width: 100%;
     z-index: 7;
-    margin-top: -3rem;
-    height: 5rem;
+
 }
 
 
 .navbar-logo {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2rem;
@@ -57,15 +55,14 @@ body {
 }
 
 .navbar ul {
-    margin-right: 8rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     color: #0d56d9;
     list-style: none;
 }
 
-.navbar-items,.form-submit_btn,
+.navbar-items,
+.form-submit_btn,
 .navbar-items:link,
 .navbar-items:focus {
     margin: 1rem;
@@ -83,14 +80,14 @@ body {
     border-radius: 100px;
 }
 
-.navbar .cto-signin {
+#contact-btn {
     background-color: #0d56d9;
     display: inline-block;
     color: #fff;
     border-radius: 100px;
     padding: 1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .navbar-items:hover {
@@ -105,7 +102,8 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-.form-submit_btn:hover{
+
+.form-submit_btn:hover {
     margin: 1rem;
     background-color: #fff;
     display: inline-block;
@@ -524,38 +522,42 @@ header {
 }
 
 /* Sign Up section styling */
-.contact-section {
-    margin-top: 8rem;
-}
-
-.contact-section_box {
-    padding: 6rem
-}
-
-.contact-form_box {
+.contact-form-box {
+    padding: 1rem;
     background-color: #0d56d9;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 100vh;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
+
 .form-content {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    padding:16rem;
+    justify-content: space-between;
+
+}
+
+.form-content textarea {
+    border: none;
+    /* flex-basis: 100%; */
+    height: 30rem;
+    font-size: 1.5rem;
+    color: black;
+    font-family: inherit;
+    padding: 1rem;
+    box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .form-input {
-    width:50%;
+    flex-basis: 100%;
+    display: block;
     font-size: 1.5rem;
     font-family: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #0d56d9;
+    font-weight: 700;
     border-bottom: 3px solid transparent;
     transition: all .3s;
     border: none;
@@ -591,34 +593,6 @@ header {
     color: #f7f7f7;
     text-transform: capitalize;
     width: 10rem;
-}
-
-.form-btn a {
-    text-decoration: none;
-    text-align: center;
-    color: #0d56d9;
-    background-color: #f7f7f7;
-    font-size: 2rem;
-    padding: 1rem;
-    width: 5rem;
-    display: block;
-    height: 5rem;
-    width: 16rem;
-    border-radius: 100px;
-    box-shadow: 0 2rem 1rem rgb(0, 0, 0, 0.1);
-}
-
-.form-btn a:hover {
-    background-color: #0d56d9;
-    color: #fff;
-    transition: all .3s ease;
-    font-size: 2rem;
-    border-radius: 100px;
-    text-decoration: none;
-}
-
-.form-btns {
-    margin-top: 2rem;
 }
 
 /* Footer Styling */
@@ -727,24 +701,6 @@ header {
     .story-quote {
         font-size: 1.9rem;
     }
-
-    .signup-form_box {
-        background-size: cover;
-        background-position: top;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-input {
-        height: 50%;
-        width: 200%;
-    }
-
-    .form-btns {
-        margin-top: 8rem;
-    }
 }
 
 /* Media query @720px */
@@ -799,18 +755,6 @@ header {
     .story-name {
         font-size: 1.5rem;
     }
-
-    .signup-form_box {
-        background-color: #0d56d9;
-        background-size: cover;
-        background-position: top;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-
-    }
-
 }
 
 /* Media query @640 */
@@ -857,49 +801,24 @@ header {
     .plans-card {
         width: 40rem;
     }
-
-    .signup-form_box {
-        background-size: cover;
-        background-position: top;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .form-input {
-        flex-basis: 100%;
-    }
 }
 
 /* Media query @480 */
 @media screen and (max-width:480px) {
     .navbar-logo {
-        margin: 1rem 0 -6rem 12rem;
         font-size: 3rem;
         font-weight: 300;
     }
 
-    .navbar {
-        align-items: flex-start;
-    }
-
     .navbar ul {
-        padding: 0;
-        flex-wrap: nowrap;
-        margin-left: -1rem;
-        ;
+        margin-left: -6rem;
+
     }
 
-    #signin-btn {
-        width: 7rem;
+    #contact-btn {
+        width: 10rem;
         font-size: .7rem;
         font-weight: 700;
-    }
-
-    .header-logo {
-        margin-top: 9rem;
     }
 
     .header-main_heading {
@@ -981,238 +900,37 @@ header {
     .story-quote {
         font-size: 1.4rem;
     }
-
-    .signup-form_box {
-        background-size: cover;
-        background-position: top;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-
-    }
-
-    .form-input {
-        width: 21rem;
-        margin-left: -4rem;
-        font-size: 1.2rem;
-    }
-
-    .form-btns {
-        margin-left: -1.5rem;
-        ;
-    }
-}
-
-
-/* Media query @370 */
-@media screen and (max-width:370px) {
-    .navbar .navbar-items {
-        font-size: .7rem;
-    }
-
-    #home-btn {
-        margin-left: 5rem;
-    }
-
-    .header-logo {
-
-        height: 10rem;
-    }
-
-    .header-main_heading {
-        font-size: 4rem;
-        margin-left: 2rem;
-    }
-
-    .header-sub_heading {
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        font-weight: 700;
-    }
-
-    .big-heading {
-        font-size: 1.1rem;
-
-    }
-
-    .plans-card_box {
-        padding: 2rem;
-
-    }
-
-    .plans-card {
-        width: 25rem;
-        height: 42rem;
-    }
-
-    .feature-card_heading {
-        font-size: 1.5rem;
-
-    }
-
-    .feature-section_card {
-        flex-basis: 110%;
-        padding: .5rem;
-
-    }
-
-    .feature-card_text {
-        font-size: .8rem;
-    }
-
-    .signup-form_box {
-        background-image: none;
-        background-color: transparent;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        visibility: hidden;
-    }
-
-    .signup-section_box {
-        background-color: #0d56d9;
-    }
-
-    /* .form-box {
-        visibility: visible;
-        margin-left: -8rem
-    } */
-
-    .form-input {
-        width: 4rem;
-        margin-left: 0;
-    }
-
-    .form-box__content label {
-        visibility: hidden;
-    }
-
-    .form-btns {
-        margin-left: 2.5rem;
-        margin-top: 2rem;
-    }
-}
-
-/* Media query @350px */
-
-@media screen and (max-width:350px) {
-    #nav-btn {
-        font-size: 1rem;
-    }
-
-    .navbar {
-
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        align-items: flex-end
-    }
-
-    .header-logo {
-        margin-top: 21rem;
-        height: 10rem;
-    }
-
-    .header-main_heading {
-        font-size: 4rem;
-        margin-left: 2rem;
-    }
-
-    .header-sub_heading {
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        font-weight: 700;
-    }
-
-    .big-heading {
-        font-size: 1.1rem;
-
-    }
-
-    .plans-card_box {
-        padding: 2rem;
-
-    }
-
-    .plans-card {
-        width: 25rem;
-        height: 42rem;
-    }
-
-    .feature-card_heading {
-        font-size: 1.5rem;
-
-    }
-
-    .feature-section_box {
-        padding: 1rem;
-    }
-
-    .feature-section_card {
-        flex-basis: 100%;
-
-        padding: .5rem;
-    }
-
-    .feature-card_text {
-        font-size: .8rem;
-    }
-
-    .signup-form_box {
-        background-image: none;
-        background-color: transparent;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-        visibility: hidden;
-    }
-
-    .signup-section_box {
-        background-color: #0d56d9;
-    }
-
-    .form-box {
-        visibility: visible;
-        margin-left: -8rem
-    }
-
-    .form-input {
-        width: 3rem;
-        margin-left: 1px;
-    }
-
-    .form-box_content label {
-        visibility: hidden;
-    }
-
-    .form-btns {
-        margin-left: 2.5rem;
-        margin-top: 2rem;
-    }
 }
 
 /* Media query @414px */
 @media only screen and (max-width: 414px) {
+    body {
+        padding: 1rem;
+    }
+
+    .navbar .navbar-items {
+        font-size: .5rem;
+        margin-left: -1rem;
+    }
+
+    #contact-btn {
+        font-size: .5rem;
+        font-weight: 700;
+        margin-top: -5rem;
+        width: 6rem;
+        height: 3rem;
+        position: absolute;
+        top: 6rem;
+        left: 33rem;
+    }
 
     .navbar-logo {
         transform: scale(0);
-        transform: translateY(-8rem);
     }
 
     .navbar {
-        height: 8rem;
-        align-items: flex-end;
+        height: 10%;
+        align-items: flex-start;
     }
 
     .navbar ul {
@@ -1224,24 +942,6 @@ header {
         width: 35rem;
         align-items: baseline;
         justify-content: space-around;
-    }
-
-    #home-btn,
-    #about-btn,
-    #features-btn,
-    #plans-btn {
-        margin-right: -4rem;
-
-    }
-
-    #signin-btn {
-        width: 7rem;
-        font-size: .7rem;
-        font-weight: 700;
-        margin-top: -9rem;
-        position: absolute;
-        top: 10rem;
-        left: 29rem;
     }
 
     .header-logo {
@@ -1294,64 +994,147 @@ header {
     .feature-card_text {
         font-size: .8rem;
     }
+}
 
-    .signup-form_box {
-        background-image: none;
-        background-color: transparent;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-        visibility: hidden;
+
+/* Media query @370 */
+@media screen and (max-width:370px) {
+    body {
+        padding:1rem;
+    }
+   .navbar .navbar-items{
+        font-size: .7rem;
+    }
+    #contact-btn {
+        position: absolute;
+        top: 6rem;
+        left: 29rem;
+    }
+    #about-btn,#features-btn,#plans-btn{
+        margin-left: -6rem;
+    }
+    .header-logo {
+
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
 
     }
 
-    .signup-section_box {
-        background-color: #0d56d9;
+    .plans-card_box {
+        padding: 2rem;
+
     }
 
-    .form-box {
-        visibility: visible;
-        margin-left: -8rem
+    .plans-card {
+        width: 25rem;
+        height: 42rem;
     }
 
-    .form-input {
-        width: 24rem;
-        margin-left: 1px;
+    .feature-card_heading {
+        font-size: 1.5rem;
+
     }
 
-    .form-box__content label {
-        visibility: hidden;
+    .feature-section_card {
+        flex-basis: 110%;
+        padding: .5rem;
+
     }
 
-    .form-btns {
-        margin-left: 2.5rem;
-        margin-top: 2rem;
+    .feature-card_text {
+        font-size: .8rem;
     }
 }
 
-/* Media query @320px */
-@media only screen and (max-width: 320px) {
-    .navbar ul {
-        margin-left: -9rem;
-    }
+/* Media query @350px */
 
-    .navbar-logo {
-        transform: scale(0);
+@media screen and (max-width:350px) {
+    body {
+        padding: 1rem;
     }
-
-    .navbar {
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        height: 5rem;
+   .navbar .navbar-items{
+        margin-left: -3.5rem;;
+        font-size:.5rem;
     }
 
 
     .header-logo {
-        margin-top: 2rem;
+        margin-top: 21rem;
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card_box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+        width: 25rem;
+        height: 42rem;
+    }
+
+    .feature-card_heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section_box {
+        padding: 1rem;
+    }
+
+    .feature-section_card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card_text {
+        font-size: .8rem;
+    }
+}
+
+
+/* Media query @320px */
+@media only screen and (max-width: 320px) {
+    #about-btn,#features-btn,#plans-btn{
+        margin-left: -7.5rem;
+    }
+    #contact-btn {
+        top: 6rem;
+        left: 27.5rem;
+    }
+    .header-logo {
+        margin-top: 4rem;
         height: 10rem;
     }
 
@@ -1399,42 +1182,4 @@ header {
     .feature-card_text {
         font-size: .8rem;
     }
-
-    .signup-form_box {
-        background-image: none;
-        background-color: transparent;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-        visibility: hidden;
-
-    }
-
-    .signup-section_box {
-        background-color: #0d56d9;
-    }
-
-    .form-box {
-        visibility: visible;
-        margin-left: -8rem
-    }
-
-    .form-input {
-        width: 18rem;
-        margin-left: 1px;
-    }
-
-    .form-input::placeholder {
-        font-size: 1;
-        letter-spacing: 0;
-    }
-
-    .form-box_content label {
-        visibility: hidden;
-    }
-
-  
 }
