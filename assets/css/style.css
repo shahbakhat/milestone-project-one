@@ -39,6 +39,7 @@ body {
     width: 100%;
     z-index: 4;
     margin-top: -1rem;
+    padding: 1rem;
 
 }
 
@@ -789,20 +790,19 @@ header {
 
 /* Media query @480 */
 @media screen and (max-width:480px) {
-    .navbar-logo {
-        font-size: 3rem;
-        font-weight: 300;
-    }
-
     .navbar .navbar-items {
-        font-size: 1rem;
+        font-size:.8rem;
     }
-
     #contact-btn {
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 700;
     }
-
+    #about-btn,
+    #features-btn,
+    #plans-btn
+    {
+        margin-left: -1rem;
+    }
     .header-main_heading {
         margin-top: 8rem;
         font-size: 5rem;
@@ -1043,14 +1043,21 @@ header {
     }
 
     .navbar .navbar-items {
-        font-size: .9rem;
+        font-size: .7rem;
+        font-weight: 900;
     }
-    #about-btn,
+    .navbar{
+        padding:0;
+    }
+    .navbar ul{
+        margin-left:-7rem;
+    }
+    /* #about-btn,
     #features-btn,
     #plans-btn
     {
         margin-left: -1rem;
-    }
+    } */
 
     .header-logo {
 
@@ -1111,8 +1118,8 @@ header {
     {
         margin-left: -.5rem;
     }
-    .navbar{
-        padding:.5rem;
+    .navbar ul{
+        margin-left: -10rem;
     }
     .navbar .navbar-items{
         font-size:.7rem;
@@ -1171,14 +1178,20 @@ header {
 @media only screen and (max-width: 320px) {
     .navbar .navbar-items {
         font-size: .7rem;
+        letter-spacing:1px;
+    }
+    #about-btn,
+    #features-btn,
+    #plans-btn
+    {
+        margin-left: -.5rem;
     }
     .navbar ul{
-        margin-left:1px;
-        flex-wrap: wrap;
+        margin-left: -8rem;
     }
     #contact-btn {
         font-size: .7rem;
-        margin-left: 1rem;
+        margin-left: -6pxpx;
     }
     .header-logo {
         margin-top: 8rem;
