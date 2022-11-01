@@ -28,7 +28,8 @@ body {
 }
 
 /* Navigation bar styling */
-.navbar {margin-top: -1rem;
+.navbar {
+    margin-top: -1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,7 +37,8 @@ body {
     background-color: #fff;
     position: fixed;
     width: 100%;
-    z-index: 7;
+    z-index: 4;
+    padding: 2rem;
 
 }
 
@@ -127,7 +129,6 @@ header {
     background-image: linear-gradient(to right bottom, rgb(13, 86, 217, 0.9), rgb(0, 154, 252, 0.9)), url(../css/images/hero.webp);
     background-position: top;
     background-size: cover;
-
     background-repeat: no-repeat;
     clip-path: polygon(0 100%, 0 0, 100% 0, 100% 95%);
     z-index: 1;
@@ -142,8 +143,6 @@ header {
     flex-direction: column;
     line-height: 8.5rem;
     text-align: center;
-
-
 }
 
 .header-logo {
@@ -152,6 +151,7 @@ header {
     left: -10px;
     height: 20rem;
     animation: slideRight 2s ease-out .3s;
+    margin-top: 4rem;
 }
 
 .header-main_heading {
@@ -539,7 +539,7 @@ header {
 
 .form-content textarea {
     border: none;
-    width:50%;
+    width: 50%;
     height: 30rem;
     font-size: 1.5rem;
     color: black;
@@ -550,7 +550,7 @@ header {
 }
 
 .form-input {
-   width :50%;
+    width: 50%;
     display: block;
     font-size: 1.5rem;
     font-family: inherit;
@@ -1000,19 +1000,25 @@ header {
 /* Media query @370 */
 @media screen and (max-width:370px) {
     body {
-        padding:1rem;
+        padding: 1rem;
     }
-   .navbar .navbar-items{
+
+    .navbar .navbar-items {
         font-size: .7rem;
     }
+
     #contact-btn {
         position: absolute;
         top: 6rem;
         left: 29rem;
     }
-    #about-btn,#features-btn,#plans-btn{
+
+    #about-btn,
+    #features-btn,
+    #plans-btn {
         margin-left: -6rem;
     }
+
     .header-logo {
 
         height: 10rem;
@@ -1066,9 +1072,11 @@ header {
     body {
         padding: 1rem;
     }
-   .navbar .navbar-items{
-        margin-left: -3.5rem;;
-        font-size:.5rem;
+
+    .navbar .navbar-items {
+        margin-left: -3.5rem;
+        ;
+        font-size: .5rem;
     }
 
 
@@ -1126,13 +1134,18 @@ header {
 
 /* Media query @320px */
 @media only screen and (max-width: 320px) {
-    #about-btn,#features-btn,#plans-btn{
+
+    #about-btn,
+    #features-btn,
+    #plans-btn {
         margin-left: -7.5rem;
     }
+
     #contact-btn {
         top: 6rem;
         left: 27.5rem;
     }
+
     .header-logo {
         margin-top: 4rem;
         height: 10rem;
