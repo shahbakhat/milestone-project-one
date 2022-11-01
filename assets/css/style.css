@@ -38,7 +38,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 4;
-    /* padding: 2rem; */
+    margin-top: -1rem;
 
 }
 
@@ -959,6 +959,82 @@ header {
     }
 }
 
+/* Media query @411px */
+@media only screen and (max-width: 411px) {
+    body {
+        padding: 1rem;
+    }
+    #about-btn,
+    #features-btn,
+    #plans-btn
+    {
+        margin-left: -1rem;
+    }
+    .navbar .navbar-items {
+        font-size: .8rem;
+        margin-left: 3rem;
+    }
+    #contact-btn {
+        font-size: .6rem;
+        font-weight: 700;
+    }
+    .navbar-logo {
+        display:inline-block;
+        width:1px;
+        transform: scale(0);
+        position: absolute;
+    }
+    .header-logo {
+        margin-top: 6rem;
+        height: 10rem;
+    }
+
+    .header-main_heading {
+        margin-top: -10rem;
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .header-sub_heading {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+
+    .big-heading {
+        font-size: 1.1rem;
+
+    }
+
+    .plans-card_box {
+        padding: 2rem;
+
+    }
+
+    .plans-card {
+        width: 25rem;
+        height: 42rem;
+    }
+
+    .feature-card_heading {
+        font-size: 1.5rem;
+
+    }
+
+    .feature-section_box {
+        padding: 1rem;
+    }
+
+    .feature-section_card {
+        flex-basis: 100%;
+
+        padding: .5rem;
+    }
+
+    .feature-card_text {
+        font-size: .8rem;
+    }
+}
 
 /* Media query @370 */
 @media screen and (max-width:370px) {
