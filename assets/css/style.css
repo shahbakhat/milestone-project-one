@@ -29,21 +29,22 @@ body {
 
 /* Navigation bar styling */
 .navbar {
-    margin-top: -1rem;
+
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #fff;
     position: fixed;
     width: 100%;
     z-index: 4;
-    padding: 2rem;
+    margin-top: -1rem;
+    /* padding: 2rem; */
 
 }
 
 
-.navbar-logo {
+/* .navbar-logo {
     display: inline-block;
     font-size: 4rem;
     text-decoration: none;
@@ -53,9 +54,9 @@ body {
     font-weight: 300;
     z-index: 4;
     background-image: linear-gradient(to right bottom, rgb(88, 0, 255, 0.8), rgba(0, 215, 255, 0.8));
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
 }
-
+*/
 .navbar ul {
     display: flex;
     flex-direction: row;
@@ -627,15 +628,9 @@ header {
 /* Media query @950px */
 @media screen and (max-width:950px) {
 
-    .navbar {
-        height: auto;
-        padding: 0;
-    }
-    .navbar-logo {
+    /* .navbar-logo {
         font-size: 3rem;
-    }
-
-
+    } */
     .header-main_heading {
         font-size: 8rem;
     }
@@ -648,7 +643,6 @@ header {
     .header-logo {
         margin-top: 8rem;
         height: 15rem;
-
     }
 
     .feature-card {
@@ -700,13 +694,9 @@ header {
 
 /* Media query @720px */
 @media screen and (max-width:720px) {
-    .navbar {
+    /* .navbar {
         flex-direction: column;
-    }
-
-    .navbar a {
-        font-size: 3rem;
-    }
+    } */
 
     .header-main_heading {
         font-size: 6rem;
@@ -764,12 +754,15 @@ header {
         font-size: 1.3rem;
         font-weight: 300;
     }
-.navbar ul {
-    margin-left: -6rem;
-}
-    .navbar .navbar-items {
-        font-size: 1;
+
+    .navbar ul {
+        margin-left: -6rem;
     }
+
+    .navbar .navbar-items {
+        font-size: 1rem;
+    }
+
     #about-heading {
         font-size: 1.2rem;
         font-weight: 700;
@@ -801,9 +794,11 @@ header {
         font-size: 3rem;
         font-weight: 300;
     }
-.navbar .navbar-items{
-    font-size:1rem;
-}
+
+    .navbar .navbar-items {
+        font-size: 1rem;
+    }
+
     #contact-btn {
         font-size: 1rem;
         font-weight: 700;
@@ -895,40 +890,24 @@ header {
     body {
         padding: 1rem;
     }
-
-    .navbar .navbar-items {
-        font-size: .9rem;
-        margin-left: -1rem;
+    .navbar ul{
+        justify-content:space-between;
+       width: 95%;
     }
-
+    .navbar .navbar-items {
+        font-size: .8rem;
+    }
     #contact-btn {
         font-size: .6rem;
         font-weight: 700;
-        position: absolute;
-        left: 33.5rem;
-        margin-top: -1.8rem;
+        margin-left: -.3rem;
     }
-
     .navbar-logo {
+        display:inline-block;
+        width:1px;
         transform: scale(0);
+        position: absolute;
     }
-
-    .navbar {
-        height: 10%;
-        align-items: flex-start;
-    }
-
-    .navbar ul {
-        position: relative;
-        margin-left: 0;
-        padding: 0;
-        flex-wrap: wrap;
-        margin-top: -5rem;
-        width: 35rem;
-        align-items: baseline;
-        justify-content: space-around;
-    }
-
     .header-logo {
         margin-top: 6rem;
         height: 10rem;
@@ -990,18 +969,12 @@ header {
 
     .navbar .navbar-items {
         font-size: .9rem;
-        margin-left: -3rem;;
     }
-
-    #contact-btn {
-        position: absolute;
-        left: 30rem;
-    }
-
     #about-btn,
     #features-btn,
-    #plans-btn {
-        margin-left: -6rem;
+    #plans-btn
+    {
+        margin-left: -1rem;
     }
 
     .header-logo {
@@ -1057,18 +1030,22 @@ header {
     body {
         padding: 1rem;
     }
-
-    .navbar .navbar-items {
-        margin-left: -3.5rem;
-        font-size: .8rem;
+    #about-btn,
+    #features-btn,
+    #plans-btn
+    {
+        margin-left: -.5rem;
     }
-
-
+    .navbar{
+        padding:.5rem;
+    }
+    .navbar .navbar-items{
+        font-size:.7rem;
+    }
     .header-logo {
-        margin-top: 21rem;
         height: 10rem;
+       margin-top:8rem;
     }
-
     .header-main_heading {
         font-size: 4rem;
         margin-left: 2rem;
@@ -1115,28 +1092,21 @@ header {
     }
 }
 
-
 /* Media query @320px */
 @media only screen and (max-width: 320px) {
-    .navbar .navbar-items{
-        font-size:.7rem;
-    }
-    #about-btn,
-    #features-btn,
-    #plans-btn {
-        margin-left:-7.5rem;
+    .navbar .navbar-items {
+        font-size: .7rem;
     }
     .navbar ul{
-        margin-left: -1rem;;
+        margin-left:1px;
+        flex-wrap: wrap;
     }
-
     #contact-btn {
-        font-size: .7;
-        left: 28rem;
+        font-size: .7rem;
+        margin-left: 1rem;
     }
-
     .header-logo {
-        margin-top: 4rem;
+        margin-top: 8rem;
         height: 10rem;
     }
 
