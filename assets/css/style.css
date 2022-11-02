@@ -351,7 +351,7 @@ header {
 .feature-card_text {
     text-align: start;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 3rem;
     color: #f7f7f7;
     text-transform: uppercase;
@@ -363,7 +363,6 @@ header {
 .plans-section {
     margin-top: 3rem;
 }
-
 .plans-card_box {
     padding: 6rem;
     display: flex;
