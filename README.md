@@ -40,7 +40,7 @@
     - [**Media And Rest**](#media-and-rest)
 
 # __YOGYM-Milestone 1st project__
-[this](#about)
+
 ## __Description__
 This website in created for the first project of Code Institute's [Diploma in Full Stack Software Development](https://codeinstitute.net/ie/full-stack-software-development-diploma/). The criteria of used technologies was limited to only HTML and CSS therefore, it is only a static website.
 
