@@ -130,4 +130,31 @@ To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
 | __Testing All inputs are working and inquiry form is working too__| when user skip inputs then the inputs give **required** *WARNING* to fill the Full name and E-Mail inputs. |    **PASS** |
 | __Testing the HTML code using  [W3C HTML validator](https://validator.w3.org/).__ |    There are no errors in HTML and Validator passes the [**Test**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F) |   **PASS** |
 | __Testing CSS code with [Jigsaw](https://jigsaw.w3.org/css-validator/)__ | Jigsaw doesnt give errors during the [**Test**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |    **PASS** |
+___
+## Deployment
+___
+### **Starting The Project**
+The project was started and coded in VS code Editor and  Git Extension was used to commit and push all the changes to and sync them to the repository.
+my Full Name and Email address was configured to all the branches not only to this project.
+For Live server preview of the ongoing project VS codes built in ***Go Live*** option was used.
+## **Deployment to cloud platform**
+Github Pages were used to deploy the website by using following steps:
+Make sure the branch you want to use as your publishing source already exists in your repository.
 
+1) On GitHub, navigate to your site's repository.
+
+2) Under your repository name, click  Settings.
+Repository settings button
+
+3) In the "Code and automation" section of the sidebar, click  Pages.
+
+4) Under "Build and deployment", under "Source", select Deploy from a branch.
+
+5) Under "Build and deployment", under "Branch", use the None or Branch drop-down menu and select a publishing source.
+
+6) Drop-down menu to select a publishing source
+
+7) Optionally, use the drop-down menu to select a folder for your publishing source.
+Drop-down menu to select a folder for publishing source
+
+8) **Click Save**.
