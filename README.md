@@ -121,13 +121,14 @@ To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
 
 | Tests  |      Expectations      | Pass/Fail |
 |----------|:-------------:|------:|
-|__Testing Responsiveness on Google Chrome__ |  Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width | **PASS** |
+|__Testing Responsiveness on Google Chrome__ |  Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width.
+*Steps*
+-To open the developer console in Google Chrome, open the Chrome Menu in the upper-right-hand corner of the browser window and select More Tools > Developer Tools.
+
+You can also use Option + ⌘ + J (on macOS), or Shift + CTRL + J (on Windows/Linux).
+ | **PASS** |
 | __Testing Responsiveness on Mozilla Firefox__ |   Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width  |   **PASS** |
-| __Testing Responsiveness on Mozilla Opera Browser__ | Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width|   **PASS** |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| __Testing Responsiveness on Mozilla Opera Browser__ | Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and  width.
+|   **PASS** |
+
 
