@@ -121,14 +121,9 @@ To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
 
 | Tests  |      Expectations      | Pass/Fail |
 |----------|:-------------:|------:|
-|__Testing Responsiveness on Google Chrome__ |  Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width.
-*Steps*
--To open the developer console in Google Chrome, open the Chrome Menu in the upper-right-hand corner of the browser window and select More Tools > Developer Tools.
-
-You can also use Option + ⌘ + J (on macOS), or Shift + CTRL + J (on Windows/Linux).
- | **PASS** |
-| __Testing Responsiveness on Mozilla Firefox__ |   Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width  |   **PASS** |
-| __Testing Responsiveness on Mozilla Opera Browser__ | Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and  width.
-|   **PASS** |
+|__Testing Responsiveness on Google Chrome__ |  Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width ***____Steps:*** To open the developer console in Google Chrome, open the Chrome Menu in the upper-right-hand corner of the browser window and select More Tools > Developer Tools.You can also use Option + ⌘ + J (on macOS), or Shift + CTRL + J (on Windows/Linux)| **PASS** |
+| __Testing Responsiveness on Mozilla Firefox__ |   Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and width.***_____Steps:*** To open the developer console in Firefox, click on the Firefox Menu in the upper-right-hand corner of the browser and select More Tools > Browser Console.You can also use the shortcut Shift + ⌘ + J (on macOS) or Shift + CTRL + J (on Windows/Linux).|   **PASS** |
+| __Testing Responsiveness on Microsoft Edge__ | Elements are not going out of the flow by decreasing the sizes for different screens and imagery is in right size and  width.***_____Steps:*** To open the developer console in Microsoft Edge, open the Edge Menu in the upper-right-hand corner of the browser window and select More Tools > Developer Tools.You can also press CTRL + Shift + i to open it.|   **PASS** |
+|  __Testing Navigation Buttons if they are linked to correct sections of the page__|By clicking home it reloads the website, About buttons brings to About section, Features Button brings to Features section, Plans button brings to Plans section, Contact Button brings to Contact Form section   |   **PASS** |
 
 
