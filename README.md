@@ -129,5 +129,5 @@ To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
 | __Testing Hover effects on plans cards buttons if they change colors and are they linked to the contact section__ |    By hovering the cursor over the Buttons they change colors and by clicking them they bring the user to contact us section.   | **PASS** |
 | __Testing All inputs are working and inquiry form is working too__| when user skip inputs then the inputs give **required** *WARNING* to fill the Full name and E-Mail inputs. |    **PASS** |
 | __Testing the HTML code using  [W3C HTML validator](https://validator.w3.org/).__ |    There are no errors in HTML and Validator passes the [**Test**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F) |   **PASS** |
-| __Testing CSS code with [Jigsaw](https://jigsaw.w3.org/css-validator/)__ | that |    **PASS** |
+| __Testing CSS code with [Jigsaw](https://jigsaw.w3.org/css-validator/)__ | Jigsaw doesnt give errors during the [**Test**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |    **PASS** |
 
