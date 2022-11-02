@@ -1,8 +1,6 @@
 ![](assets/css/images/readme-main.png)
-## **Table of Contents**
-=================
+**Table of Contents**
 
-- [## **Table of Contents**](#-table-of-contents)
 - [__YOGYM-Milestone 1st project__](#yogym-milestone-1st-project)
   - [__Description__](#description)
   - [__YOGYM responsive website__](#yogym-responsive-website)
