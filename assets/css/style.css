@@ -537,7 +537,7 @@ header {
 
 .form-content textarea {
     border: none;
-    width: 90%;
+    width: 50%;
     height: 30rem;
     font-size: 1.5rem;
     color: black;
@@ -548,7 +548,7 @@ header {
 }
 
 .form-input {
-    width: 90%;
+    width: 50%;
     display: block;
     font-size: 1.5rem;
     font-family: inherit;
@@ -879,6 +879,12 @@ header {
     .story-quote {
         font-size: 1.4rem;
     }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
+    }
 }
 
 /* Media query @414px */
@@ -953,6 +959,12 @@ header {
 
     .feature-card_text {
         font-size: .8rem;
+    }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
     }
 }
 
@@ -1031,6 +1043,12 @@ header {
     .feature-card_text {
         font-size: .8rem;
     }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
+    }
 }
 
 /* Media query @370 */
@@ -1101,6 +1119,12 @@ header {
     .feature-card_text {
         font-size: .8rem;
     }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
+    }
 }
 
 /* Media query @350px */
@@ -1168,6 +1192,12 @@ header {
 
     .feature-card_text {
         font-size: .8rem;
+    }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
     }
 }
 
@@ -1238,5 +1268,11 @@ header {
 
     .feature-card_text {
         font-size: .8rem;
+    }
+    .form-input{
+        width:90%;
+    }
+    .form-content textarea{
+        width:90%;
     }
 }
