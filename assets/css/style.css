@@ -245,7 +245,7 @@ header {
         opacity: 1;
         translate: (0)
     }
-} 
+}
 
 /* About section Styling */
 .big-heading {
@@ -1214,11 +1214,11 @@ header {
         margin-left: -.5rem;
     }
     .navbar ul{
-        margin-left: -8rem;
+        margin-left: -7rem;
     }
     #contact-btn {
         font-size: .7rem;
-        margin-left: -6pxpx;
+
     }
     .header-logo {
         margin-top: 8rem;
