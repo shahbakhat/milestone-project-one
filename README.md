@@ -39,7 +39,7 @@ The website is structured to let the user know all about the platform behind the
 - What features do they offer 
 - How affordable they are 
 -  What do their members think about them
--  and how a user can get in touch with them
+-  And how a user can get in touch with them
 ____
 ### Homepage
 ___
