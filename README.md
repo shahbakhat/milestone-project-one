@@ -1,7 +1,48 @@
 ![](assets/css/images/readme-main.png)
+Table of Contents
+=================
+
+- [Table of Contents](#table-of-contents)
+- [__YOGYM-Milestone 1st project__](#yogym-milestone-1st-project)
+  - [__Description__](#description)
+  - [__YOGYM responsive website__](#yogym-responsive-website)
+  - [__User Experience goals__](#user-experience-goals)
+    - [__First time user:__](#first-time-user)
+    - [__Frequent user:__](#frequent-user)
+    - [__Returning User:__](#returning-user)
+  - [__Design__](#design)
+    - [__color scheme__](#color-scheme)
+    - [__Typography__](#typography)
+    - [__imagery__](#imagery)
+  - [__Structure__](#structure)
+    - [Homepage](#homepage)
+    - [Navigation Bar](#navigation-bar)
+    - [About Section](#about-section)
+    - [Features Section](#features-section)
+    - [Plans Section](#plans-section)
+    - [Stories Section](#stories-section)
+    - [Contact Us Section](#contact-us-section)
+  - [__Features__](#features)
+    - [Current Feature](#current-feature)
+    - [Future Implementations](#future-implementations)
+    - [__Technologies Used__](#technologies-used)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [Google Fonts](#google-fonts)
+    - [Visual Studio Code](#visual-studio-code)
+    - [Techsini](#techsini)
+    - [Github](#github)
+    - [Github Pages](#github-pages)
+  - [**__Testing__**](#testing)
+  - [**Deployment**](#deployment)
+    - [**Starting The Project**](#starting-the-project)
+  - [**Deployment to cloud platform**](#deployment-to-cloud-platform)
+  - [**Credits**](#credits)
+    - [**Acknowledgements**](#acknowledgements)
+    - [**Media And Rest**](#media-and-rest)
+
 # __YOGYM-Milestone 1st project__
-
-
+[this](#about)
 ## __Description__
 This website in created for the first project of Code Institute's [Diploma in Full Stack Software Development](https://codeinstitute.net/ie/full-stack-software-development-diploma/). The criteria of used technologies was limited to only HTML and CSS therefore, it is only a static website.
 
@@ -112,7 +153,9 @@ Github was used to store all the source code for this website
 ### Github Pages
 Using github pages this website was deployed online.
 ____
-## __Testing__
+## **__Testing__**
+___
+
 To make sure everything is all in place and working testing was done on the whole website.
 responsiveness was tested on all  devices using 
 *Google Chrom Dev Tools* and *[amiresponsive.com](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2Findex.html&width=1400&height=700)* . All buttons were tested if they are properly linked to the relative link and accessibility test was done for visual effects. all the color contrasts were tested using [webaim.org](https://webaim.org/resources/contrastchecker/).
@@ -131,7 +174,7 @@ To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
 | __Testing the HTML code using  [W3C HTML validator](https://validator.w3.org/).__ |    There are no errors in HTML and Validator passes the [**Test**](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F) |   **PASS** |
 | __Testing CSS code with [Jigsaw](https://jigsaw.w3.org/css-validator/)__ | Jigsaw doesnt give errors during the [**Test**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshahbakhat.github.io%2Fmilestone-project-one%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |    **PASS** |
 ___
-## Deployment
+## **Deployment**
 ___
 ### **Starting The Project**
 The project was started and coded in VS code Editor and  Git Extension was used to commit and push all the changes to and sync them to the repository.
@@ -158,3 +201,10 @@ Repository settings button
 Drop-down menu to select a folder for publishing source
 
 8) **Click Save**.
+___
+## **Credits**
+____
+### **Acknowledgements**
+First of All thanks to [Code Institute](https://codeinstitute.net/ie/) for an amazing content and brilliant course to offer, and then All thanks go to my Mentor ***"Ronan Mclelland"*** for helping me out through the project by showing the right path and to help me when i was overwhelmed few things, he proved to be a flawless mentor and an amazing person.
+### **Media And Rest**
+Photos were taken from [pexels.com](https://www.pexels.com/). Fonts were chosen from [Google fonts library](https://fonts.google.com/specimen/Lato). Color Pallets were taken from [Coolors.co](https://coolors.co/).
