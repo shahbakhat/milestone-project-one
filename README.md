@@ -64,7 +64,7 @@ ___
 
 ## __Design__
 ### __color scheme__
-The whole website is colored in Vivid Blue #0d56d9 as a primary color and Pure Blue #009AFC as a secondary color. these color are used wisely as a having health and fitness platform theme, these two colors are cool on eyes and have a peaceful feeling in to them when user look at them, moreover, these colors are used by some commercial websites too so the used can be familiar or can relate by looking at them.
+The whole website is colored in Vivid Blue [#0D56D9](https://via.placeholder.com/150/0D56D9/808080%20?T%20C/O%20https://placeholder.com/) as a primary color and Pure Blue [#009AFC](https://via.placeholder.com/150/009AFC/808080%20?T%20C/O%20https://placeholder.com/) as a secondary color. these color are used wisely as a having health and fitness platform theme, these two colors are cool on eyes and have a peaceful feeling in to them when user look at them, moreover, these colors are used by some commercial websites too so the used can be familiar or can relate by looking at them.
 ### __Typography__
 
 all through the website the  __Lato__ font is used from Google fonts library.
@@ -92,6 +92,7 @@ ___
 ![](assets/css/images/nav.png)
 ___
 The Navigation Bar navigates the user through the whole websites, all the buttons are active by clicking them and all relative sections are linked to the buttons accordingly.
+___
 ### About Section
 ___
 ![](assets/css/images/about.png)
